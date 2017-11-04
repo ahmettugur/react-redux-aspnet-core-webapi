@@ -1,0 +1,77 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "OnlineStore.Business/1.0.0": {
+        "dependencies": {
+          "OnlineStore.Business.Contracts": "1.0.0",
+          "OnlineStore.Data.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "OnlineStore.Business.dll": {}
+        }
+      },
+      "OnlineStore.Business.Contracts/1.0.0": {
+        "dependencies": {
+          "OnlineStore.Entity": "1.0.0"
+        },
+        "runtime": {
+          "OnlineStore.Business.Contracts.dll": {}
+        }
+      },
+      "OnlineStore.Core.Contracts/1.0.0": {
+        "runtime": {
+          "OnlineStore.Core.Contracts.dll": {}
+        }
+      },
+      "OnlineStore.Data.Contracts/1.0.0": {
+        "dependencies": {
+          "OnlineStore.Core.Contracts": "1.0.0",
+          "OnlineStore.Entity": "1.0.0"
+        },
+        "runtime": {
+          "OnlineStore.Data.Contracts.dll": {}
+        }
+      },
+      "OnlineStore.Entity/1.0.0": {
+        "dependencies": {
+          "OnlineStore.Core.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "OnlineStore.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnlineStore.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.Business.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.Core.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.Data.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
