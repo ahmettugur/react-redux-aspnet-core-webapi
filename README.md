@@ -1,11 +1,5 @@
 Single page basic Online Store app; React and Redux with ASP.NET CORE 2.0 Web Api.
 
-# Web Site
-- http://localhost:3000/web
-
-# Admin Panel
-- http://localhost:3000/admin
-
 # Web API
 - Asp.Net Core 2.0
 - Entity Framework Core 2.0
@@ -42,3 +36,8 @@ cd OnlineStoreReact folder location
 npm install 
 npm start
 ```
+### Web Site
+- http&#58;//localhost:3000/web
+
+### Admin Panel
+- http&#58;//localhost:3000/admin
