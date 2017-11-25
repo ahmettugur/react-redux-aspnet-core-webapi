@@ -5,7 +5,7 @@ function setCart(data) {
     var CartLine = { Product: {}, Quantity: 0 };
     var cart = { CartLines: [], Total: 0, Message: "" }
 
-    if (storageCart == null) {
+    if (storageCart === null) {
         CartLine.Product = data;
         CartLine.Quantity = 1;
         cart.CartLines.push(CartLine);
@@ -13,7 +13,7 @@ function setCart(data) {
     else {
         cart = JSON.parse(storageCart);
         var isExist = _.some(cart.CartLines, function (cartLine) {
-            if (cartLine.Product.Id == data.Id) {
+            if (cartLine.Product.Id === data.Id) {
                 cartLine.Quantity++;
                 return true;
             }
@@ -34,11 +34,11 @@ function setCart(data) {
     return cart;
 }
 
-function getCart(data = null) {
-    if (data == null || data.Id == 0) {
+export default function getCart(data = null) {
+    if (data === null || data.Id === 0) {
         let cart = { CartLines: [], Total: 0 }
         let storageCart = localStorage.getItem("cart");
-        if (storageCart == null) {
+        if (storageCart === null) {
             return cart;
         } else {
             cart = JSON.parse(storageCart);
@@ -49,4 +49,4 @@ function getCart(data = null) {
     }
 }
 
-module.exports = getCart;
+//module.exports = getCart;

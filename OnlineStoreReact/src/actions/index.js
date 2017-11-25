@@ -9,13 +9,14 @@ const PRODUCT_CRUD_URL = "/api/admin/products";
 const CATEGORY_CRUD_URL = "/api/categories";
 export const PRODUCT_EXCEL_DOWNLOAD_URL = API_URL + "/api/admin/products/download"
 
+
+export const FETCH_CART = "FETCH_CART";
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const FETCH_PRODUCT_LIST = 'FETCH_PRODUCT_LIST';
+export const FETCH_ADMIN_PRODUCT_LIST = "FETCH_ADMIN_PRODUCT_LIST";
+export const PRODUCT_DETAIL = "PRODUCT_DETAIL";
 export const FETCH_CATEGORY_LIST = 'FETCH_CATEGORY_LIST';
 export const CATEGORY_DETAIL = 'CATEGORY_DETAIL';
-export const FETCH_PRODUCT_LIST = "FETCH_PRODUCT_LIST";
-export const PRODUCT_DETAIL = "PRODUCT_DETAIL";
-export const ADD_TO_CART = "ADD_TO_CART";
-export const FETCH_CART = "FETCH_CART";
-export const FETCH_ADMIN_PRODUCT_LIST = "FETCH_ADMIN_PRODUCT_LIST";
 export const ACCES_TOKEN = 'ACCES_TOKEN';
 
 export const PRODUCT_CREATE = "PRODUCT_CREATE";
@@ -54,8 +55,6 @@ export function addCategory(props) {
         'headers': {
             "Authorization": "Bearer " + token.accessToken
         }
-    }).catch((error) => {
-
     });
 
     return {
@@ -74,8 +73,6 @@ export function updateCategory(props) {
         'headers': {
             "Authorization": "Bearer " + token.accessToken
         }
-    }).catch((error) => {
-
     });
 
     return {
@@ -94,8 +91,6 @@ export function deleteCategory(id) {
         'headers': {
             "Authorization": "Bearer " + token.accessToken
         }
-    }).catch((error) => {
-
     });
 
     return {
@@ -121,8 +116,6 @@ export function fetchAdminProducts(page) {
     if (accessToken != null) {
         token = JSON.parse(accessToken);
     }
-    var data = { Products: [], PageSize: 0, PageCount: 0 }
-
     var request = axios.get(API_URL + PRODUCT_CRUD_URL + "/" + page, {
         'headers': {
             "Authorization": "Bearer " + token.accessToken
@@ -139,8 +132,8 @@ export function fetchAdminProducts(page) {
 
         } else {
             console.log('Error', error.message);
-            tokenData.accessToken = '';
-            tokenData.message = error.message
+            accessToken.accessToken = '';
+            accessToken.message = error.message
         }
         console.log(error.config);
     });
@@ -161,8 +154,6 @@ export function addproduct(props) {
         'headers': {
             "Authorization": "Bearer " + token.accessToken
         }
-    }).catch((error) => {
-
     });
 
     return {
@@ -181,8 +172,6 @@ export function updateProduct(props) {
         'headers': {
             "Authorization": "Bearer " + token.accessToken
         }
-    }).catch((error) => {
-
     });
 
     return {
@@ -201,8 +190,6 @@ export function deleteProduct(id) {
         'headers': {
             "Authorization": "Bearer " + token.accessToken
         }
-    }).catch((error) => {
-
     });
 
     return {
@@ -220,41 +207,50 @@ export function productDetail(productId) {
 }
 ///Product Action END
 
+// export function login2(props) {
+
+//     const data = {
+//         "Email": props.Email,
+//         "Password": props.Password
+//     };
+//     return function (dispatch) {
+//         axios.post(API_URL + ACCES_TOKEN_URL, data)
+//             .then((response) => {
+//                 alert(response.data.token)
+//                 return {
+//                     type: ACCES_TOKEN,
+//                     payload: response
+//                 }
+
+//             })
+//             .catch((error) => {
+//                 console.log(error.response.data);
+//                 console.log(error.response.status);
+//                 console.log(error.response.headers);
+//                 return {
+//                     type: ERROR,
+//                     payload: error
+//                 }
+//             });
+//     }
+// }
+
 export function login(props) {
-    var accessToken = localStorage.getItem('accessToken');
-    var tokenData = {
-        accessToken: '',
-        message: ''
-    }
-
-
     const data = {
         "Email": props.Email,
         "Password": props.Password
     };
-    var request = axios.post(API_URL + ACCES_TOKEN_URL, data).catch((error) => {
 
-    });
-
+    var request = axios.post(API_URL + ACCES_TOKEN_URL, data);
+    console.log("request");
+    console.log(request);
+    console.log("request");
     return {
         type: ACCES_TOKEN,
         payload: request
     }
-
-    // var hours = 24; // Reset when storage is more than 24hours
-    // var now = new Date().getTime();
-    // var setupTime = localStorage.getItem('setupTime');
-    // if (setupTime == null) {
-    //     1
-    //     localStorage.setItem('setupTime', now)
-    // } else {
-    //     if (now - setupTime > hours * 60 * 60 * 1000) {
-    //         localStorage.clear()
-    //         localStorage.setItem('setupTime', now);
-    //     }
-    // }
-
 }
+
 
 export function addToCart(productId) {
     const request = axios.get(API_URL + PRODUCT_DETAIL_URL + "/" + productId)
@@ -272,19 +268,19 @@ export function fetchCart() {
     }
 }
 
-function transformDataToParams(data) {
-    var str = [];
-    for (var p in data) {
-        if (data.hasOwnProperty(p) && data[p]) {
-            if (typeof data[p] === 'string') {
-                str.push(encodeURIComponent(p) + '=' + encodeURIComponent(data[p]));
-            }
-            if (typeof data[p] === 'object') {
-                for (var i in data[p]) {
-                    str.push(encodeURIComponent(p) + '=' + encodeURIComponent(data[p][i]));
-                }
-            }
-        }
-    }
-    return str.join('&');
-}
+// function transformDataToParams(data) {
+//     var str = [];
+//     for (var p in data) {
+//         if (data.hasOwnProperty(p) && data[p]) {
+//             if (typeof data[p] === 'string') {
+//                 str.push(encodeURIComponent(p) + '=' + encodeURIComponent(data[p]));
+//             }
+//             if (typeof data[p] === 'object') {
+//                 for (var i in data[p]) {
+//                     str.push(encodeURIComponent(p) + '=' + encodeURIComponent(data[p][i]));
+//                 }
+//             }
+//         }
+//     }
+//     return str.join('&');
+// }

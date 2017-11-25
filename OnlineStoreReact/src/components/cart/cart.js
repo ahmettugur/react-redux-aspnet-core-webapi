@@ -10,7 +10,7 @@ class Cart extends Component {
         this.props.fetchCart();
     }
     componentWillReceiveProps(nextProps) {
-        if (this.props.Total != nextProps.Total) {
+        if (this.props.Total !== nextProps.Total) {
             this.props.fetchCart();
         }
     }
@@ -24,7 +24,7 @@ class Cart extends Component {
         return this.props.cartLines.map((cartLine) => {
             return (
                 <li key={cartLine.Product.Name}>
-                    <a href="javascript:;">
+                    <a href="javascript:void(0);">
                         {cartLine.Product.Name}
                         <span className="badge">
                             {cartLine.Quantity}
@@ -35,10 +35,10 @@ class Cart extends Component {
         })
     }
     render() {
-        if (this.props.cartLines.length == 0) {
+        if (this.props.cartLines.length === 0) {
             return (
                 <ul className="dropdown-menu">
-                    <li><a href="javascript:;">
+                    <li><a href="javascript:void(0);">
                         <span className="glyphicon glyphicon-align-left glyphicon-shopping-cart" aria-hidden="true">
                             0
                         </span>
@@ -56,7 +56,7 @@ class Cart extends Component {
             <ul className="dropdown-menu">
                 {this.renderCartLine()}
                 <li role="separator" className="divider"></li>
-                <li><a href="javascript:;">
+                <li><a href="javascript:void(0);">
                     <span className="glyphicon glyphicon-align-left glyphicon-shopping-cart" aria-hidden="true">
                         {this.currencyFormat(this.props.total)}
                     </span>

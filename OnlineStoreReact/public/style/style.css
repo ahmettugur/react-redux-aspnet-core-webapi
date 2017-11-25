@@ -65,3 +65,9 @@ body {
 .btn-default{
   margin-left: 10px;
 }
+#alertBox{
+  display: none;
+}
+.pagination li a{
+  cursor: pointer;
+}

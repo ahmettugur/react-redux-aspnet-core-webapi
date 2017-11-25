@@ -10,7 +10,7 @@ import CartList from "./cart/cart_list"
 
 export default class App extends Component {
   render() {
-    const categoryId = this.props.match.params.categoryId == undefined ? 0 : this.props.match.params.categoryId;
+    const categoryId = this.props.match.params.categoryId === undefined ? 0 : this.props.match.params.categoryId;
     return (
       <div className="container">
         <Navbar />

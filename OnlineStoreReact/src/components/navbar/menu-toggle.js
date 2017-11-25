@@ -9,7 +9,7 @@ export default class MenuToggle extends Component {
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                 </button>
-                <a className="navbar-brand" href="#">{this.props.text}</a>
+                <a className="navbar-brand">{this.props.text}</a>
             </div>
         )
     }

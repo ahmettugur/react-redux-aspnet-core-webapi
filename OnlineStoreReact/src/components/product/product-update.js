@@ -10,8 +10,10 @@ import MenuItem from "material-ui/MenuItem";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import PropTypes from "prop-types"
-// import injectTapEventPlugin from "react-tap-event-plugin";
-// injectTapEventPlugin();
+import BlockUi from 'react-block-ui';
+import 'react-block-ui/style.css';
+
+import showAlertBox from "../../tools/tools"
 
 const validate = values => {
     const errors = {}
@@ -55,36 +57,43 @@ const renderSelectField = ({ input, label, defaultValue, meta: { touched, error 
 
 
 class ProductUpdateForm extends Component {
-    //['Name', 'Price', 'StockQuantity', 'CategoryId', 'Details']
-    state = {
-        name: '',
-        price: 0,
-        stockQuantity: 0,
-        categoryId: 0,
-        details: '',
-        done: false
+    constructor(props) {
+        super(props);
+        this.state = {
+            blocking: false,
+            name: '',
+            price: 0,
+            stockQuantity: 0,
+            categoryId: 0,
+            details: '',
+            done: false
+        };
     }
-
-    // static contextTypes = {
-    //     router: PropTypes.object
-    // }
-
+    toggleBlocking(status) {
+        this.setState({ blocking: status });
+    }
     componentWillMount() {
         this.setState({
             done: false
         });
         this.props.fetchCategories();
         var productId = this.props.productId;
-        if (productId == '0' && productId == undefined) {
+        if (productId === '0' && productId === undefined) {
             this.context.router.history.push("/admin/products")
-            this.context.router.history.replace("/admin/products")
-
         }
         this.props.productDetail(productId);
     }
     componentWillReceiveProps(nextProps) {
-
-        if (nextProps.product != this.props.product) {
+        if (nextProps.status === 204) {
+            this.toggleBlocking(false)
+            showAlertBox("Product was updated successfully", "alert-success");
+            this.context.router.history.replace("/admin/products")
+        }
+        else if (nextProps.status === 400) {
+            this.toggleBlocking(false)
+            showAlertBox(nextProps.message, "alert-danger");
+        }
+        if (nextProps.product !== this.props.product) {
             this.setState({
                 name: nextProps.product.Name,
                 price: nextProps.product.Price,
@@ -96,10 +105,8 @@ class ProductUpdateForm extends Component {
         }
     }
     onSubmit(props) {
-        this.props.updateProduct(props).then(() => {
-            this.context.router.history.push("/admin/products")
-            this.context.router.history.replace("/admin/products")
-        });
+        this.toggleBlocking(true)
+        this.props.updateProduct(props);
     }
     renderCategoryItem() {
         return this.props.categories.map((category) => {
@@ -115,39 +122,42 @@ class ProductUpdateForm extends Component {
                 <div>Loading...</div>
             )
         }
-        const { handleSubmit, pristine, reset, submitting } = this.props
+        const { handleSubmit } = this.props
+        //const { handleSubmit, pristine, reset, submitting } = this.props
         return (
             <div className="col-md-12 col-sm-12">
-                <div className="page-header">
-                    <h4 className="text-primary"> Update product </h4>
-                </div>
-                <div className="container">
-                    <MuiThemeProvider muiTheme={getMuiTheme()}>
-                        <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-                            <div className="form-group">
-                                <Field type="text" name="Name" id="Name" defaultValue={this.state.name} component={renderTextField} label="Product Name" />
-                            </div>
-                            <div>
-                                <Field type="number" name="Price" defaultValue={this.state.price} component={renderTextField} label="Price" />
-                            </div>
-                            <div>
-                                <Field type="number" name="StockQuantity" defaultValue={this.state.stockQuantity} component={renderTextField} label="Stock Quantity" />
-                            </div>
-                            <div>
-                                <Field name="CategoryId" defaultValue={this.state.categoryId} component={renderSelectField} label="Category">
-                                    {this.renderCategoryItem()}
-                                </Field>
-                            </div>
-                            <div>
-                                <Field name="Details" defaultValue={this.state.details} component={renderTextField} label="Details" multiLine={true} rows={2} />
-                            </div>
-                            <div>
-                                <button type="submit" className="btn btn-primary">Update</button>
-                                <Link to="/admin/products" className="btn btn-default">Go Back</Link>
-                            </div>
-                        </form>
-                    </MuiThemeProvider>
-                </div>
+                <BlockUi tag="div" blocking={this.state.blocking}>
+                    <div className="page-header">
+                        <h4 className="text-primary"> Update product </h4>
+                    </div>
+                    <div className="container">
+                        <MuiThemeProvider muiTheme={getMuiTheme()}>
+                            <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+                                <div className="form-group">
+                                    <Field type="text" name="Name" id="Name" defaultValue={this.state.name} component={renderTextField} label="Product Name" />
+                                </div>
+                                <div>
+                                    <Field type="number" name="Price" defaultValue={this.state.price} component={renderTextField} label="Price" />
+                                </div>
+                                <div>
+                                    <Field type="number" name="StockQuantity" defaultValue={this.state.stockQuantity} component={renderTextField} label="Stock Quantity" />
+                                </div>
+                                <div>
+                                    <Field name="CategoryId" defaultValue={this.state.categoryId} component={renderSelectField} label="Category">
+                                        {this.renderCategoryItem()}
+                                    </Field>
+                                </div>
+                                <div>
+                                    <Field name="Details" defaultValue={this.state.details} component={renderTextField} label="Details" multiLine={true} rows={2} />
+                                </div>
+                                <div>
+                                    <button type="submit" className="btn btn-primary">Update</button>
+                                    <Link to="/admin/products" className="btn btn-default">Go Back</Link>
+                                </div>
+                            </form>
+                        </MuiThemeProvider>
+                    </div>
+                </BlockUi>
             </div>
         )
     }
@@ -159,7 +169,10 @@ function mapStateToProps(state) {
     return {
         categories: state.categories.categories,
         product: state.products.product,
-        initialValues: state.products.product
+        initialValues: state.products.product,
+        message: state.products.message,
+        status: state.products.status,
+        statusClass: state.products.statusClass
     }
 }
 

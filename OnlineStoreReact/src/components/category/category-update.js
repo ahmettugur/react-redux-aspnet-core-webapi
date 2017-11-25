@@ -5,11 +5,13 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Field, reduxForm } from "redux-form";
 import TextField from "material-ui/TextField";
-import SelectField from "material-ui/SelectField";
-import MenuItem from "material-ui/MenuItem";
+import BlockUi from 'react-block-ui';
+import 'react-block-ui/style.css';
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import PropTypes from "prop-types"
+
+import showAlertBox from "../../tools/tools"
 
 const validate = values => {
     const errors = {}
@@ -39,20 +41,25 @@ const renderTextField = ({ input, label, type, defaultValue, name, id, meta: { t
 
 class CategoryUpdateForm extends Component {
 
-
-    state = {
-        name: '',
-        description: 0,
-        done: false
+    constructor(props) {
+        super(props);
+        this.state = {
+            blocking: false,
+            name: '',
+            description: 0,
+            done: false
+        };
     }
-
+    toggleBlocking(status) {
+        this.setState({ blocking: status });
+    }
     componentWillMount() {
         this.setState({
             done: false
         });
 
         var categoryId = this.props.categoryId;
-        if (categoryId == '0' && categoryId == undefined) {
+        if (categoryId === '0' && categoryId === undefined) {
             this.context.router.push("/admin/categories");
 
         }
@@ -60,7 +67,16 @@ class CategoryUpdateForm extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        if (nextProps.category != this.props.category) {
+        if (nextProps.status === 204) {
+            this.toggleBlocking(false)
+            showAlertBox("Category was updated successfully", "alert-success");
+            this.context.router.history.push("/admin/categories");
+        }
+        else if (nextProps.status === 400) {
+            this.toggleBlocking(false)
+            showAlertBox(nextProps.message, "alert-danger");
+        }
+        if (nextProps.category !== this.props.category) {
             this.setState({
                 name: nextProps.category.Name,
                 description: nextProps.category.Description,
@@ -70,10 +86,8 @@ class CategoryUpdateForm extends Component {
     }
 
     onSubmit(props) {
-        this.props.updateCategory(props).then(() => {
-            this.context.router.history.push("/admin/categories");
-            this.context.router.history.replace("/admin/categories");
-        });
+        this.toggleBlocking(true)
+        this.props.updateCategory(props);
     }
 
     render() {
@@ -82,28 +96,30 @@ class CategoryUpdateForm extends Component {
                 <div>Loading...</div>
             )
         }
-        const { handleSubmit, pristine, reset, submitting } = this.props
+        const { handleSubmit } = this.props
         return (
             <div className="col-md-12 col-sm-12">
-                <div className="page-header">
-                    <h4 className="text-primary"> Update Category </h4>
-                </div>
-                <div className="container">
-                    <MuiThemeProvider muiTheme={getMuiTheme()}>
-                        <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-                            <div className="form-group">
-                                <Field type="text" name="Name" id="Name" defaultValue={this.state.name} component={renderTextField} label="Category Name" />
-                            </div>
-                            <div>
-                                <Field name="Description" defaultValue={this.state.description} component={renderTextField} label="Description" multiLine={true} rows={2} />
-                            </div>
-                            <div>
-                                <button type="submit" className="btn btn-primary">Update</button>
-                                <Link to="/admin/categories" className="btn btn-default">Go Back</Link>
-                            </div>
-                        </form>
-                    </MuiThemeProvider>
-                </div>
+                <BlockUi tag="div" blocking={this.state.blocking}>
+                    <div className="page-header">
+                        <h4 className="text-primary"> Update Category </h4>
+                    </div>
+                    <div className="container">
+                        <MuiThemeProvider muiTheme={getMuiTheme()}>
+                            <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+                                <div className="form-group">
+                                    <Field type="text" name="Name" id="Name" defaultValue={this.state.name} component={renderTextField} label="Category Name" />
+                                </div>
+                                <div>
+                                    <Field name="Description" defaultValue={this.state.description} component={renderTextField} label="Description" multiLine={true} rows={2} />
+                                </div>
+                                <div>
+                                    <button type="submit" className="btn btn-primary">Update</button>
+                                    <Link to="/admin/categories" className="btn btn-default">Go Back</Link>
+                                </div>
+                            </form>
+                        </MuiThemeProvider>
+                    </div>
+                </BlockUi>
             </div>
         )
     }
@@ -120,7 +136,10 @@ class CategoryUpdateForm extends Component {
 function mapStateToProps(state) {
     return {
         category: state.categories.category,
-        initialValues: state.categories.category
+        initialValues: state.categories.category,
+        message: state.categories.message,
+        status: state.categories.status,
+        statusClass: state.categories.statusClass
     }
 }
 

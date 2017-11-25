@@ -37,7 +37,10 @@ export default class AdminApp extends Component {
     return (
       <div className="container">
         <AdminNavbar />
-        <div>
+        <div className="col-md-12 col-sm-12">
+          <div id="alertBox" className="alert" role="alert">
+            This is a success alert—check it out!
+         </div>
           <Route path="/admin/products/:page?" component={AdminProducts} />
           <Route path="/admin/product/productform/:productId?" component={ProductForm} />
           <Route path="/admin/categories/:page?" component={AdminCategories} />

@@ -9,7 +9,7 @@ export default class ProductForm extends Component {
 
     render() {
         const productId = this.props.match.params.productId
-        if (productId != undefined) {
+        if (productId !== undefined) {
             return (
               <ProductUpdateForm productId={productId} />
             )

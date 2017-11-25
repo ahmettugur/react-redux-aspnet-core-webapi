@@ -34,7 +34,7 @@ class CategoryList extends Component {
         });
     }
     render() {
-        if (this.props.categories == 0) {
+        if (this.props.categories === 0) {
             return (
                 <div>Loading...</div>
             )

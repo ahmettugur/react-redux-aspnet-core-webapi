@@ -2,8 +2,13 @@ import React, { Component } from "react";
 import { fetchCart } from "../../actions/index";
 import { bindActionCreators } from "redux"
 import { connect } from "react-redux";
-import getCart from "./cart-store";
+//import getCart from "./cart-store";
 import { Link } from "react-router-dom"
+import $ from 'jquery';
+import 'bootstrap/dist/css/bootstrap.css';
+import bootbox from "bootbox"
+window.jQuery = $;
+require('bootstrap');
 
 class CartList extends Component {
     removeItem(productId) {
@@ -53,7 +58,7 @@ class CartList extends Component {
     //     return "$" + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
     // }
     currencyFormat(num) {
-        if (num != "") {
+        if (num !== "") {
             num = parseFloat(num)
             return "$" + num
                 .toFixed(2) // always two decimal digits
@@ -78,7 +83,7 @@ class CartList extends Component {
         });
     }
     render() {
-        if (this.props.cartLines.length == 0) {
+        if (this.props.cartLines.length === 0) {
             return (
                 <div>Loading...</div>
             )

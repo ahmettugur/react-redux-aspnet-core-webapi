@@ -9,7 +9,7 @@ export default class CategoryForm extends Component {
         const categoryId = this.props.match.params.categoryId;
         console.log("categoryId: " + categoryId)
 
-        if (categoryId != undefined) {
+        if (categoryId !== undefined) {
             return (
                 <CategoryUpdateForm categoryId={categoryId} />
             );

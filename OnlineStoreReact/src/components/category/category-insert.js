@@ -5,11 +5,14 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
 import TextField from "material-ui/TextField";
-import SelectField from "material-ui/SelectField";
-import MenuItem from "material-ui/MenuItem";
+import BlockUi from 'react-block-ui';
+import 'react-block-ui/style.css';
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import PropTypes from "prop-types"
+
+import showAlertBox from "../../tools/tools"
+import { fade } from "material-ui/utils/colorManipulator";
 
 const validate = values => {
     const errors = {}
@@ -35,13 +38,31 @@ const renderTextField = ({ input, label, type, meta: { touched, error }, ...cust
 )
 
 export class CategoryInsertForm extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            blocking: false,
+        };
+    }
+
+    toggleBlocking(status) {
+        this.setState({ blocking: status });
+    }
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.status === 201) {
+            this.toggleBlocking(fade)
+            showAlertBox("Category was added successfully", "alert-success");
+            this.context.router.history.push("/admin/categories");
+        }
+        else if (nextProps.status === 400) {
+            this.toggleBlocking(false)
+            showAlertBox(nextProps.message, "alert-danger");
+        }
+    }
 
     onSubmit(props) {
-        console.log(props);
-        this.props.addCategory(props).then(() => {
-            this.context.router.history.push("/admin/categories");
-            this.context.router.history.replace("/admin/categories");
-        });
+        this.toggleBlocking(true)
+        this.props.addCategory(props);
     }
 
     render() {
@@ -49,28 +70,38 @@ export class CategoryInsertForm extends Component {
         const { handleSubmit, pristine, reset, submitting } = this.props
         return (
             <div className="col-md-12 col-sm-12">
-                <div className="page-header">
-                    <h4 className="text-primary"> Add a new Category </h4>
-                </div>
-                <div className="container">
-                    <MuiThemeProvider muiTheme={getMuiTheme()}>
-                        <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-                            <div className="form-group">
-                                <Field type="text" name="Name" component={renderTextField} label="Category Name" />
-                            </div>
-                            <div>
-                                <Field name="Description" component={renderTextField} label="Description" multiLine={true} rows={2} />
-                            </div>
-                            <div>
-                                <button type="submit" className="btn btn-primary" disabled={pristine || submitting}>Save</button>
-                                <button type="button" className="btn btn-default" disabled={pristine || submitting} onClick={reset}>Clear Values </button>
-                                <Link to="/admin/categories" className="btn btn-default">Go Back</Link>
-                            </div>
-                        </form>
-                    </MuiThemeProvider>
-                </div>
+                <BlockUi tag="div" blocking={this.state.blocking}>
+                    <div className="page-header">
+                        <h4 className="text-primary"> Add a new Category </h4>
+                    </div>
+                    <div className="container">
+                        <MuiThemeProvider muiTheme={getMuiTheme()}>
+                            <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+                                <div className="form-group">
+                                    <Field type="text" name="Name" component={renderTextField} label="Category Name" />
+                                </div>
+                                <div>
+                                    <Field name="Description" component={renderTextField} label="Description" multiLine={true} rows={2} />
+                                </div>
+                                <div>
+                                    <button type="submit" className="btn btn-primary" disabled={pristine || submitting}>Save</button>
+                                    <button type="button" className="btn btn-default" disabled={pristine || submitting} onClick={reset}>Clear Values </button>
+                                    <Link to="/admin/categories" className="btn btn-default">Go Back</Link>
+                                </div>
+                            </form>
+                        </MuiThemeProvider>
+                    </div>
+                </BlockUi>
             </div>
         )
+    }
+}
+
+function mapStateToProps(state) {
+    return {
+        message: state.categories.message,
+        status: state.categories.status,
+        statusClass: state.categories.statusClass
     }
 }
 
@@ -81,7 +112,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 
-export default connect(null, mapDispatchToProps)(reduxForm({
+export default connect(mapStateToProps, mapDispatchToProps)(reduxForm({
     form: 'CategoryInsertForm',
     validate
 })(CategoryInsertForm));
