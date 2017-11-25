@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Threading;
 
 namespace OnlineStore.API.Controllers
 {
@@ -89,19 +90,27 @@ namespace OnlineStore.API.Controllers
         [HttpGet]
         public IActionResult ProductComplexList(int page = 1)
         {
+            //Thread.Sleep(5000);
 
-            int pageSize = 10;
-            var productComplex = _productService.GetAllProductWithCategory().OrderByDescending(_ => _.ProductId).ToList();
-
-            ProductWithCategoryResponse ProductComplexResponse = new ProductWithCategoryResponse
+            try
             {
-                Products = productComplex.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
-                PageCount = (int)Math.Ceiling(productComplex.Count / (double)pageSize),
-                PageSize = pageSize,
+                int pageSize = 10;
+                var productComplex = _productService.GetAllProductWithCategory().OrderByDescending(_ => _.ProductId).ToList();
 
-            };
+                ProductWithCategoryResponse ProductComplexResponse = new ProductWithCategoryResponse
+                {
+                    Products = productComplex.Skip((page - 1) * pageSize).Take(pageSize).ToList(),
+                    PageCount = (int)Math.Ceiling(productComplex.Count / (double)pageSize),
+                    PageSize = pageSize,
 
-            return Ok(ProductComplexResponse);
+                };
+
+                return Ok(ProductComplexResponse);
+            }
+            catch
+            {
+                return BadRequest("An error has occurred");
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -114,7 +123,6 @@ namespace OnlineStore.API.Controllers
                 _productService.Add(product);
 
                 return Created("", product);
-
             }
             catch (Exception ex)
             {
@@ -136,7 +144,7 @@ namespace OnlineStore.API.Controllers
                 else
                 {
                     _productService.Update(product);
-                    return Ok(product);
+                    return NoContent();
                 }
 
             }
@@ -162,7 +170,7 @@ namespace OnlineStore.API.Controllers
                     Product product = new Product { Id = id };
                     _productService.Delete(product);
 
-                    return Ok("Your product was deletd succesfully.");
+                    return NoContent();
 
                 }
             }

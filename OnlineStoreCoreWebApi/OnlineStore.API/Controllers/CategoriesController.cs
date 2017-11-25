@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using OnlineStore.Business.Contracts;
 using OnlineStore.Entity.Concrete;
 using Microsoft.AspNetCore.Authorization;
+using System.Threading;
 
 namespace OnlineStore.API.Controllers
 {
@@ -24,16 +25,30 @@ namespace OnlineStore.API.Controllers
         [HttpGet]
         public IActionResult CategoryList()
         {
-            return Ok(_categoryService.GetAll().OrderByDescending(_ => _.Id));
+            try
+            {
+                return Ok(_categoryService.GetAll().OrderByDescending(_ => _.Id));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [Route("api/categories/{id}")]
         [HttpGet]
         public IActionResult Get(int id)
         {
-            var category = _categoryService.Get(_ => _.Id == id);
+            try
+            {
+                var category = _categoryService.Get(_ => _.Id == id);
 
-            return Ok(category);
+                return Ok(category);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -41,9 +56,15 @@ namespace OnlineStore.API.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] Category category)
         {
-            _categoryService.Add(category);
-
-            return Ok(category);
+            try
+            {
+                _categoryService.Add(category);
+                return Created("", category);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -51,9 +72,16 @@ namespace OnlineStore.API.Controllers
         [HttpPut]
         public IActionResult Put([FromBody] Category category)
         {
-            _categoryService.Update(category);
+            try
+            {
+                _categoryService.Update(category);
 
-            return Ok(category);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -65,12 +93,11 @@ namespace OnlineStore.API.Controllers
             {
                 var category = new Category { Id = id };
                 _categoryService.Delete(category);
-
                 return NoContent();
             }
-            catch
+            catch (Exception ex)
             {
-                return NoContent();
+                return BadRequest(ex.Message);
             }
         }
     }

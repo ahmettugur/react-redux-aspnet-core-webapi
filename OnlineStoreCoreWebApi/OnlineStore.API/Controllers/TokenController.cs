@@ -59,7 +59,7 @@ namespace OnlineStore.API.Controllers
                     issuer: _configuration["Issuer"],
                     audience: _configuration["Audience"],
                     claims: claims,
-                    expires: DateTime.UtcNow.AddHours(1),
+                    expires: DateTime.UtcNow.AddHours(10),
                     notBefore: DateTime.UtcNow,
                     signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SigningKey"])),
                             SecurityAlgorithms.HmacSha256)
