@@ -13,7 +13,8 @@ Single page basic Online Store app; React and Redux with ASP.NET CORE 2.0 Web Ap
   - material UI
   - axios
   - react-router
-  - bootpage
+  - react-block-ui
+  - react-pager
   - bootbox
 
 # Prerequisites
