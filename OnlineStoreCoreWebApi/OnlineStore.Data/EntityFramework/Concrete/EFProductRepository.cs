@@ -10,7 +10,7 @@ using OnlineStore.Entity.ComplexType;
 
 namespace OnlineStore.Data.EntityFramework.Concrete
 {
-    public class ProductRepository : GenericRepository<Product, OnlineStoreContext>, IProductRepository
+    public class EFProductRepository : EFGenericRepository<Product, OnlineStoreContext>, IProductRepository
     {
         public List<ProductWithCategory> GetAllProductWithCategory()
         {

@@ -1,4 +1,4 @@
-﻿using OnlineStore.Core.Contracts.Repository.EntityFramework;
+﻿using OnlineStore.Core.Contracts.Repository;
 using OnlineStore.Entity.Concrete;
 using System;
 using System.Collections.Generic;

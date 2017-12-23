@@ -664,7 +664,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DEVELOPER\\.nuget\\packages\\": {},
+    "C:\\Users\\ALPEREN\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -673,17 +673,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\GithubProject\\ReactAndReduxWithAspNetCore2WebApi\\OnlineStoreCoreWebApi\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj",
+      "projectUniqueName": "D:\\GithubProject\\ReactAndReduxWithAspNetCore2WebApi\\OnlineStoreCoreWebApi\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj",
       "projectName": "OnlineStore.Core.Contracts",
-      "projectPath": "E:\\GithubProject\\ReactAndReduxWithAspNetCore2WebApi\\OnlineStoreCoreWebApi\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj",
-      "packagesPath": "C:\\Users\\DEVELOPER\\.nuget\\packages\\",
-      "outputPath": "E:\\GithubProject\\ReactAndReduxWithAspNetCore2WebApi\\OnlineStoreCoreWebApi\\OnlineStore.Core.Contracts\\obj\\",
+      "projectPath": "D:\\GithubProject\\ReactAndReduxWithAspNetCore2WebApi\\OnlineStoreCoreWebApi\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj",
+      "packagesPath": "C:\\Users\\ALPEREN\\.nuget\\packages\\",
+      "outputPath": "D:\\GithubProject\\ReactAndReduxWithAspNetCore2WebApi\\OnlineStoreCoreWebApi\\OnlineStore.Core.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\DEVELOPER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ALPEREN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -710,7 +710,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

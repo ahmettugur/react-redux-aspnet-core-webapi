@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineStore.Core.Contracts\OnlineStore.Core.Contracts.csproj" />
+    <ProjectReference Include="..\OnlineStore.Core\OnlineStore.Core.csproj" />
   </ItemGroup>
 
 </Project>

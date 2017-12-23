@@ -10,7 +10,7 @@ using OnlineStore.Entity.ComplexType;
 
 namespace OnlineStore.Data.EntityFramework.Concrete
 {
-    public class UserRepository : GenericRepository<User, OnlineStoreContext>, IUserRespository
+    public class EFUserRepository : EFGenericRepository<User, OnlineStoreContext>, IUserRespository
     {
         public string[] GetUserRoles(User user)
         {

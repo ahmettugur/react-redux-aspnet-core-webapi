@@ -17,6 +17,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Newtonsoft.Json.Serialization;
+using OnlineStore.Data.Dapper;
+using OnlineStore.API.Middlewares;
 
 namespace OnlineStore.API
 {
@@ -32,16 +34,7 @@ namespace OnlineStore.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IProductService, ProductService>();
-            services.AddScoped<ICategoryService, CategoryService>();
-            services.AddScoped<IUserService, UserService>();
-
-
-            services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<IUserRespository, UserRepository>();
-
-            services.AddScoped<DbContext, OnlineStoreContext>();
+            services.AddDependencyInjection();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(jwtBearerOptions =>
@@ -55,6 +48,19 @@ namespace OnlineStore.API
                     ValidIssuer = Configuration["Issuer"],
                     ValidAudience = Configuration["Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SigningKey"]))
+                };
+                jwtBearerOptions.Events = new JwtBearerEvents
+                {
+                    OnAuthenticationFailed = context =>
+                    {
+                        Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
+                        return Task.CompletedTask;
+                    },
+                    OnTokenValidated = context =>
+                    {
+                        Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
+                        return Task.CompletedTask;
+                    }
                 };
             });
 
@@ -72,6 +78,7 @@ namespace OnlineStore.API
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseCors(b => b.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
             app.UseAuthentication();
             app.UseMvcWithDefaultRoute();

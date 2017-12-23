@@ -40,7 +40,7 @@ namespace OnlineStore.API.Controllers
                 var user = GetUserIdFromCredentials(loginViewModel);
                 if (user == null)
                 {
-                    return Unauthorized();
+                    return NotFound("Invaliid Username and password");
                 }
 
                 var jsonUser = JsonConvert.SerializeObject(user);

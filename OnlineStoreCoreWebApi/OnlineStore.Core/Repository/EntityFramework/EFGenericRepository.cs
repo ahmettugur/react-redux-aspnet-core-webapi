@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineStore.Core.Contracts.Entities;
-using OnlineStore.Core.Contracts.Repository.EntityFramework;
+using OnlineStore.Core.Contracts.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Linq.Expressions;
 
 namespace OnlineStore.Core.Repository.EntityFramework
 {
-    public abstract class GenericRepository<TEntity, TContext> : IGenericRepository<TEntity>
+    public abstract class EFGenericRepository<TEntity, TContext> : IGenericRepository<TEntity>
         where TEntity : class, IEntity, new()
         where TContext : DbContext, new()
     {

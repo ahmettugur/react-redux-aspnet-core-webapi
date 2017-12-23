@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnlineStore.Data.EntityFramework.Concrete
 {
-    public class CategoryRepository : GenericRepository<Category, OnlineStoreContext>, ICategoryRepository
+    public class EFCategoryRepository : EFGenericRepository<Category, OnlineStoreContext>, ICategoryRepository
     {
     }
 }

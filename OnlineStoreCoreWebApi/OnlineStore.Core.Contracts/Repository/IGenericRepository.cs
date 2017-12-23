@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace OnlineStore.Core.Contracts.Repository.EntityFramework
+namespace OnlineStore.Core.Contracts.Repository
 {
     public interface IGenericRepository<T>
         where T : class, IEntity, new()
