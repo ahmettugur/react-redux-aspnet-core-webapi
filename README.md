@@ -1,9 +1,10 @@
 Single page basic Online Store app; React and Redux with ASP.NET CORE 2.0 Web Api.
 
 # Web API
+- Generic Repostory Pattern (Entity Framework Reository and Dapper Repository)
 - Asp.Net Core 2.0
 - Entity Framework Core 2.0
-- Generic Repostory Pattern
+- Dapper
 - JwtBearer Token Authentication
 - Dependency Injection
 - EPPlus Excel Download
