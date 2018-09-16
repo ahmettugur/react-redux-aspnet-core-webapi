@@ -30,7 +30,6 @@ Single page basic Online Store app; React and Redux with ASP.NET CORE 2.0 Web Ap
 * Download [RabbitMQ](https://www.rabbitmq.com/download.html) Install your computer
 * Open SQL Server Management Studio > File > Open > File  select Store.sql and execute
 * Change OnlineStore.API > appsettings.json file connection string Data Source your server name
-```
 
 ### Installation Node Module
 
@@ -40,6 +39,18 @@ Open command prompt
 cd OnlineStoreReact folder location
 npm install 
 npm start
+
+cd OnlineStoreCoreWebApi/OnlineStore.API
+dotnet run
+
+cd OnlineStoreCoreWebApi/OnlineStore.MQService
+dotnet run
+
+open yor browser go to thr product detail page (http&#58;//localhost:3000/web/products)
+and open another tab on your browser and theen go to admin product update page (http&#58;//localhost:3000/admin)
+and chenge product stock quantity
+
+
 ```
 ### Web Site
 - http&#58;//localhost:3000/web
