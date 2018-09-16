@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
-import Navbar from "./navbar/navbar"
-import CategoryList from "./category/category_list"
-import Products from "./product/products"
-import CartList from "./cart/cart_list"
+import { Route } from 'react-router-dom';
+import Navbar from "./navbar/navbar";
+import CategoryList from "./category/category_list";
+import Products from "./product/products";
+import CartList from "./cart/cart_list";
+import ProductDetail from "./product/product-detail";
 
 
 
@@ -18,6 +19,7 @@ export default class App extends Component {
           <CategoryList categoryId={categoryId} />
           <Route path="/web/products/:categoryId?/:page?" component={Products} />
           <Route path="/web/cart" component={CartList} />
+          <Route path="/web/productdetail/:productId" component={ProductDetail} />
         </div>
       </div>
     );

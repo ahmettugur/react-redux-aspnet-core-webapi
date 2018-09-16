@@ -15,8 +15,8 @@ class CartList extends Component {
         var cart = { CartLines: [], Total: 0, Message: "" }
 
         var item = this.props.cartLines.filter(function (el) {
-            if (el.Product.Id !== productId) {
-                cart.Total += parseFloat(el.Product.Price * el.Quantity);
+            if (el.Product.id !== productId) {
+                cart.Total += parseFloat(el.Product.price * el.Quantity);
                 return el;
             }
         });
@@ -69,12 +69,12 @@ class CartList extends Component {
     renderCart() {
         return this.props.cartLines.map((cartLine) => {
             return (
-                <tr key={cartLine.Product.Id}>
-                    <td>{cartLine.Product.Name}</td>
-                    <td style={{ textAlign: 'right' }}>{this.currencyFormat(cartLine.Product.Price)}</td>
+                <tr key={cartLine.Product.id}>
+                    <td>{cartLine.Product.name}</td>
+                    <td style={{ textAlign: 'right' }}>{this.currencyFormat(cartLine.Product.price)}</td>
                     <td style={{ textAlign: 'right' }}>{cartLine.Quantity}</td>
                     <td className="text-right">
-                        <a className="btn btn-xs btn-danger pull-right" onClick={() => this.removeFromCart(cartLine.Product.Id)} >
+                        <a className="btn btn-xs btn-danger pull-right" onClick={() => this.removeFromCart(cartLine.Product.id)} >
                             <span className="glyphicon glyphicon-remove"></span>
                         </a>
                     </td>

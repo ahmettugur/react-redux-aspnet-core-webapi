@@ -23,9 +23,9 @@ class Cart extends Component {
     renderCartLine() {
         return this.props.cartLines.map((cartLine) => {
             return (
-                <li key={cartLine.Product.Name}>
+                <li key={cartLine.Product.name}>
                     <a href="javascript:void(0);">
-                        {cartLine.Product.Name}
+                        {cartLine.Product.name}
                         <span className="badge">
                             {cartLine.Quantity}
                         </span>

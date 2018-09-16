@@ -1,0 +1,14 @@
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/bin/Debug/netstandard2.0/OnlineStore.MQ.deps.json
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/bin/Debug/netstandard2.0/OnlineStore.MQ.dll
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/bin/Debug/netstandard2.0/OnlineStore.MQ.pdb
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/bin/Debug/netstandard2.0/OnlineStore.Core.Contracts.dll
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/bin/Debug/netstandard2.0/OnlineStore.Utilities.dll
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/bin/Debug/netstandard2.0/OnlineStore.Core.Contracts.pdb
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/bin/Debug/netstandard2.0/OnlineStore.Utilities.pdb
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/obj/Debug/netstandard2.0/OnlineStore.MQ.csprojAssemblyReference.cache
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/obj/Debug/netstandard2.0/OnlineStore.MQ.csproj.CoreCompileInputs.cache
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/obj/Debug/netstandard2.0/OnlineStore.MQ.AssemblyInfoInputs.cache
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/obj/Debug/netstandard2.0/OnlineStore.MQ.AssemblyInfo.cs
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/obj/Debug/netstandard2.0/OnlineStore.MQ.csproj.CopyComplete
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/obj/Debug/netstandard2.0/OnlineStore.MQ.dll
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/obj/Debug/netstandard2.0/OnlineStore.MQ.pdb

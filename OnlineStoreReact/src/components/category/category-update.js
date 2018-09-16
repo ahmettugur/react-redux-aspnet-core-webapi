@@ -15,7 +15,7 @@ import showAlertBox from "../../tools/tools"
 
 const validate = values => {
     const errors = {}
-    const requiredFields = ['Name', 'Description']
+    const requiredFields = ['name', 'description']
     requiredFields.forEach(field => {
         if (!values[field]) {
             errors[field] = 'Required'
@@ -78,8 +78,8 @@ class CategoryUpdateForm extends Component {
         }
         if (nextProps.category !== this.props.category) {
             this.setState({
-                name: nextProps.category.Name,
-                description: nextProps.category.Description,
+                name: nextProps.category.name,
+                description: nextProps.category.description,
                 done: true
             });
         }
@@ -107,10 +107,10 @@ class CategoryUpdateForm extends Component {
                         <MuiThemeProvider muiTheme={getMuiTheme()}>
                             <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                                 <div className="form-group">
-                                    <Field type="text" name="Name" id="Name" defaultValue={this.state.name} component={renderTextField} label="Category Name" />
+                                    <Field type="text" name="name" id="name" defaultValue={this.state.name} component={renderTextField} label="Category Name" />
                                 </div>
                                 <div>
-                                    <Field name="Description" defaultValue={this.state.description} component={renderTextField} label="Description" multiLine={true} rows={2} />
+                                    <Field name="description" defaultValue={this.state.description} component={renderTextField} label="Description" multiLine={true} rows={2} />
                                 </div>
                                 <div>
                                     <button type="submit" className="btn btn-primary">Update</button>

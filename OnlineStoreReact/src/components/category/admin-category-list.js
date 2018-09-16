@@ -68,15 +68,15 @@ class AdminCategoryList extends Component {
     renderCategory() {
         return this.props.categories.map((category) => {
             return (
-                <tr key={category.Id}>
-                    <td>{category.Id} </td>
-                    <td>{category.Name} </td>
-                    <td>{category.Description} </td>
+                <tr key={category.id}>
+                    <td>{category.id} </td>
+                    <td>{category.name} </td>
+                    <td>{category.description} </td>
                     <td>
-                        <a className="btn btn-sm btn-danger pull-right" title="Delete" onClick={() => this.deletecategory(category.Id)} >
+                        <a className="btn btn-sm btn-danger pull-right" title="Delete" onClick={() => this.deletecategory(category.id)} >
                             <i className="glyphicon glyphicon-trash"></i>
                         </a>
-                        <Link className="btn btn-sm btn-warning pull-right button-margin" title="Edit" to={"/admin/category/categoryform/" + category.Id} >
+                        <Link className="btn btn-sm btn-warning pull-right button-margin" title="Edit" to={"/admin/category/categoryform/" + category.id} >
                             <i className="glyphicon glyphicon-edit"></i>
                         </Link>
                     </td>

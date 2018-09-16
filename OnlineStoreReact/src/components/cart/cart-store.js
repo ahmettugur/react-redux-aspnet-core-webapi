@@ -13,7 +13,7 @@ function setCart(data) {
     else {
         cart = JSON.parse(storageCart);
         var isExist = _.some(cart.CartLines, function (cartLine) {
-            if (cartLine.Product.Id === data.Id) {
+            if (cartLine.Product.id === data.id) {
                 cartLine.Quantity++;
                 return true;
             }
@@ -26,16 +26,16 @@ function setCart(data) {
         }
     }
     var totalPrice = _.reduce(cart.CartLines, function (totalPrice, cartLine) {
-        return totalPrice + parseFloat(cartLine.Product.Price * cartLine.Quantity);
+        return totalPrice + parseFloat(cartLine.Product.price * cartLine.Quantity);
     }, 0);
     cart.Total = totalPrice;
-    cart.Message = "Your product Chef " + data.Name + " was succesfuly added to the cart";
+    cart.Message = "Your product Chef " + data.name + " was succesfuly added to the cart";
     localStorage.setItem('cart', JSON.stringify(cart));
     return cart;
 }
 
 export default function getCart(data = null) {
-    if (data === null || data.Id === 0) {
+    if (data === null || data.id === 0) {
         let cart = { CartLines: [], Total: 0 }
         let storageCart = localStorage.getItem("cart");
         if (storageCart === null) {

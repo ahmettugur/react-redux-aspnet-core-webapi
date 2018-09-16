@@ -2,6 +2,7 @@
 using OnlineStore.Data.Contracts;
 using OnlineStore.Entity.ComplexType;
 using OnlineStore.Entity.Concrete;
+using OnlineStore.MQ.RabbitMQ;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -11,10 +12,13 @@ namespace OnlineStore.Business.Services
     public class ProductService : IProductService
     {
         private IProductRepository _productRepository;
+        private RabbitMQEntityPost<Product> rabbitMQ;
 
         public ProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
+            rabbitMQ = new RabbitMQEntityPost<Product>("ProductQueue");
+            
         }
 
         public Product Add(Product entity)
@@ -29,7 +33,8 @@ namespace OnlineStore.Business.Services
 
         public Product Get(Expression<Func<Product, bool>> predicate)
         {
-            return _productRepository.Get(predicate);
+            var product = _productRepository.Get(predicate);
+            return product;
         }
 
 
@@ -45,7 +50,9 @@ namespace OnlineStore.Business.Services
 
         public Product Update(Product entity)
         {
-            return _productRepository.Update(entity);
+            var product =  _productRepository.Update(entity);
+            rabbitMQ.Post(product);
+            return product;
         }
     }
 }

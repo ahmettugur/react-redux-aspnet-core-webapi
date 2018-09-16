@@ -29,7 +29,7 @@ class CategoryList extends Component {
     renderCategoryItem() {
         return this.props.categories.map((category) => {
             return (
-                <CategoryItem key={category.Id} categoryName={category.Name} catId={category.Id} currentCategory={this.props.categoryId} />
+                <CategoryItem key={category.id} categoryName={category.name} catId={category.id} currentCategory={this.props.categoryId} />
             );
         });
     }

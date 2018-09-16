@@ -25,9 +25,9 @@ export default function (state = INITIAL_STATE, action) {
             break;
         case `${FETCH_PRODUCT_LIST}_FULFILLED`:
             return {
-                ...state, products: action.payload.data.Products,
-                PageSize: action.payload.data.PageSize,
-                PageCount: action.payload.data.PageCount,
+                ...state, products: action.payload.data.products,
+                PageSize: action.payload.data.pageSize,
+                PageCount: action.payload.data.pageCount,
                 product: null,
                 message: action.payload.statusText,
                 status: action.payload.status,
@@ -47,9 +47,9 @@ export default function (state = INITIAL_STATE, action) {
             break;
         case `${FETCH_ADMIN_PRODUCT_LIST}_FULFILLED`:
             return {
-                ...state, products: action.payload.data.Products,
-                PageCount: action.payload.data.PageCount,
-                PageSize: action.payload.data.PageSize,
+                ...state, products: action.payload.data.products,
+                PageCount: action.payload.data.pageCount,
+                PageSize: action.payload.data.pageSize,
                 product: null,
                 message: action.payload.statusText,
                 status: action.payload.status,
@@ -67,7 +67,6 @@ export default function (state = INITIAL_STATE, action) {
             return { ...state }
             break;
         case `${PRODUCT_DETAIL}_FULFILLED`:
-            console.log(action.payload.data);
             return {
                 ...state,
                 product: action.payload.data,

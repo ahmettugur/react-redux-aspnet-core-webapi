@@ -17,7 +17,7 @@ import showAlertBox from "../../tools/tools"
 
 const validate = values => {
     const errors = {}
-    const requiredFields = ['Name', 'Price', 'StockQuantity', 'CategoryId', 'Details']
+    const requiredFields = ['name', 'price', 'stockQuantity', 'categoryId', 'details']
     requiredFields.forEach(field => {
         if (!values[field]) {
             errors[field] = 'Required'
@@ -95,11 +95,11 @@ class ProductUpdateForm extends Component {
         }
         if (nextProps.product !== this.props.product) {
             this.setState({
-                name: nextProps.product.Name,
-                price: nextProps.product.Price,
-                stockQuantity: nextProps.product.StockQuantity,
-                categoryId: nextProps.product.CategoryId,
-                details: nextProps.product.Details,
+                name: nextProps.product.name,
+                price: nextProps.product.price,
+                stockQuantity: nextProps.product.stockQuantity,
+                categoryId: nextProps.product.categoryId,
+                details: nextProps.product.details,
                 done: true
             });
         }
@@ -111,7 +111,7 @@ class ProductUpdateForm extends Component {
     renderCategoryItem() {
         return this.props.categories.map((category) => {
             return (
-                <MenuItem key={category.Id} value={category.Id} primaryText={category.Name} />
+                <MenuItem key={category.id} value={category.id} primaryText={category.name} />
             );
         })
     }
@@ -134,21 +134,21 @@ class ProductUpdateForm extends Component {
                         <MuiThemeProvider muiTheme={getMuiTheme()}>
                             <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                                 <div className="form-group">
-                                    <Field type="text" name="Name" id="Name" defaultValue={this.state.name} component={renderTextField} label="Product Name" />
+                                    <Field type="text" name="name" id="name" defaultValue={this.state.name} component={renderTextField} label="Product Name" />
                                 </div>
                                 <div>
-                                    <Field type="number" name="Price" defaultValue={this.state.price} component={renderTextField} label="Price" />
+                                    <Field type="number" name="price" defaultValue={this.state.price} component={renderTextField} label="Price" />
                                 </div>
                                 <div>
-                                    <Field type="number" name="StockQuantity" defaultValue={this.state.stockQuantity} component={renderTextField} label="Stock Quantity" />
+                                    <Field type="number" name="stockQuantity" defaultValue={this.state.stockQuantity} component={renderTextField} label="Stock Quantity" />
                                 </div>
                                 <div>
-                                    <Field name="CategoryId" defaultValue={this.state.categoryId} component={renderSelectField} label="Category">
+                                    <Field name="categoryId" defaultValue={this.state.categoryId} component={renderSelectField} label="Category">
                                         {this.renderCategoryItem()}
                                     </Field>
                                 </div>
                                 <div>
-                                    <Field name="Details" defaultValue={this.state.details} component={renderTextField} label="Details" multiLine={true} rows={2} />
+                                    <Field name="details" defaultValue={this.state.details} component={renderTextField} label="Details" multiLine={true} rows={2} />
                                 </div>
                                 <div>
                                     <button type="submit" className="btn btn-primary">Update</button>

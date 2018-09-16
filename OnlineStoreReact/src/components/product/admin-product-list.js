@@ -114,17 +114,17 @@ class AdminProductList extends Component {
 
         return this.props.products.map((product) => {
             return (
-                <tr id={product.ProductId} key={product.ProductId}>
-                    <td> {product.ProductId} </td>
-                    <td> {product.CategoryName} </td>
-                    <td> {product.Name} </td>
-                    <td> {this.currencyFormat(product.Price)} </td>
-                    <td> {product.StockQuantity} </td>
+                <tr id={product.productId} key={product.ProductId}>
+                    <td> {product.productId} </td>
+                    <td> {product.categoryName} </td>
+                    <td> {product.name} </td>
+                    <td> {this.currencyFormat(product.price)} </td>
+                    <td> {product.stockQuantity} </td>
                     <td>
-                        <a className="btn btn-sm btn-danger pull-right" title="Delete" onClick={() => this.deleteProduct(product.ProductId)} >
+                        <a className="btn btn-sm btn-danger pull-right" title="Delete" onClick={() => this.deleteProduct(product.productId)} >
                             <i className="glyphicon glyphicon-trash"></i>
                         </a>
-                        <Link className="btn btn-sm btn-warning pull-right button-margin" title="Edit" to={"/admin/product/productform/" + product.ProductId} >
+                        <Link className="btn btn-sm btn-warning pull-right button-margin" title="Edit" to={"/admin/product/productform/" + product.productId} >
                             <i className="glyphicon glyphicon-edit"></i>
                         </Link>
                     </td>

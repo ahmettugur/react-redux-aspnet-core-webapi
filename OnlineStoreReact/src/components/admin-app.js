@@ -7,8 +7,7 @@ import AdminCategories from "./category/admin-category-list";
 import ProductForm from "./product/product-form";
 import CategoryForm from "./category/category-form";
 import PropTypes from "prop-types";
-import injectTapEventPlugin from "react-tap-event-plugin";
-injectTapEventPlugin();
+// injectTapEventPlugin();
 
 
 export default class AdminApp extends Component {

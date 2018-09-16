@@ -16,7 +16,7 @@ import { fade } from "material-ui/utils/colorManipulator";
 
 const validate = values => {
     const errors = {}
-    const requiredFields = ['Name', 'Description']
+    const requiredFields = ['name', 'description']
     requiredFields.forEach(field => {
         if (!values[field]) {
             errors[field] = 'Required'
@@ -78,10 +78,10 @@ export class CategoryInsertForm extends Component {
                         <MuiThemeProvider muiTheme={getMuiTheme()}>
                             <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                                 <div className="form-group">
-                                    <Field type="text" name="Name" component={renderTextField} label="Category Name" />
+                                    <Field type="text" name="name" component={renderTextField} label="Category Name" />
                                 </div>
                                 <div>
-                                    <Field name="Description" component={renderTextField} label="Description" multiLine={true} rows={2} />
+                                    <Field name="description" component={renderTextField} label="description" multiLine={true} rows={2} />
                                 </div>
                                 <div>
                                     <button type="submit" className="btn btn-primary" disabled={pristine || submitting}>Save</button>

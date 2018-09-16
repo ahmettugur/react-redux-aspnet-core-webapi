@@ -16,7 +16,7 @@ import showAlertBox from "../../tools/tools"
 
 const validate = values => {
     const errors = {}
-    const requiredFields = ['Name', 'Price', 'StockQuantity', 'CategoryId', 'Details']
+    const requiredFields = ['name', 'price', 'stockQuantity', 'categoryId', 'details']
     requiredFields.forEach(field => {
         if (!values[field]) {
             errors[field] = 'Required'
@@ -82,7 +82,7 @@ export class ProductInsertForm extends Component {
     renderCategoryItem() {
         return this.props.categories.map((category) => {
             return (
-                <MenuItem key={category.Id} value={category.Id} primaryText={category.Name} />
+                <MenuItem key={category.id} value={category.id} primaryText={category.name} />
             );
         })
     }
@@ -100,21 +100,21 @@ export class ProductInsertForm extends Component {
                         <MuiThemeProvider muiTheme={getMuiTheme()}>
                             <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
                                 <div className="form-group">
-                                    <Field type="text" name="Name" component={renderTextField} label="Product Name" />
+                                    <Field type="text" name="name" component={renderTextField} label="Product Name" />
                                 </div>
                                 <div>
-                                    <Field type="number" name="Price" component={renderTextField} label="Price" />
+                                    <Field type="number" name="price" component={renderTextField} label="Price" />
                                 </div>
                                 <div>
-                                    <Field type="number" name="StockQuantity" component={renderTextField} label="Stock Quantity" />
+                                    <Field type="number" name="stockQuantity" component={renderTextField} label="Stock Quantity" />
                                 </div>
                                 <div>
-                                    <Field name="CategoryId" component={renderSelectField} label="Category">
+                                    <Field name="categoryId" component={renderSelectField} label="Category">
                                         {this.renderCategoryItem()}
                                     </Field>
                                 </div>
                                 <div>
-                                    <Field name="Details" component={renderTextField} label="Details" multiLine={true} rows={2} />
+                                    <Field name="details" component={renderTextField} label="Details" multiLine={true} rows={2} />
                                 </div>
                                 <div>
                                     <button type="submit" className="btn btn-primary" disabled={pristine || submitting}>Save</button>

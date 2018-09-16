@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,7 +9,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using OnlineStore.Business.Contracts;
 using OnlineStore.Business.Services;
-using OnlineStore.Data.Contracts;
 using OnlineStore.Data.EntityFramework.Concrete;
 using OnlineStore.Data.EntityFramework;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +18,8 @@ using System.Text;
 using Newtonsoft.Json.Serialization;
 using OnlineStore.Data.Dapper;
 using OnlineStore.API.Middlewares;
+using Microsoft.AspNetCore.Mvc;
+using OnlineStore.API.Controllers;
 
 namespace OnlineStore.API
 {
@@ -66,8 +67,10 @@ namespace OnlineStore.API
 
             services.AddCors();
             //services.AddMvc();
-            services.AddMvc()
-                .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            // services.AddMvc()
+            //     .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            services.AddSignalR();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,11 +82,15 @@ namespace OnlineStore.API
             }
 
             app.UseStaticFiles();
-            app.UseCors(b => b.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+            //app.UseCors(b => b.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+            app.UseCors(_=>_.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
             app.UseAuthentication();
             app.UseMvcWithDefaultRoute();
 
-
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<ProductHub>("/producthub");
+            });
         }
     }
 }

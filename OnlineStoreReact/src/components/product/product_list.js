@@ -1,15 +1,10 @@
 import React, { Component } from "react"
+import { Link } from "react-router-dom";
 import { bindActionCreators } from "redux"
 import { connect } from "react-redux"
 import { fetchProducts, addToCart } from "../../actions/index"
 import Paging from "../paging"
 // import Cart from "./cart"
-
-import $ from 'jquery';
-import 'bootstrap/dist/css/bootstrap.css';
-import bootbox from "bootbox"
-window.jQuery = $;
-require('bootstrap');
 
 class ProductList extends Component {
 
@@ -38,33 +33,21 @@ class ProductList extends Component {
 
         }
     }
-
-    addToCarts(id) {
-        this.props.addToCart(id).then(() => {
-            bootbox.alert({
-                message: "Your product added succcesfully!",
-                size: 'small'
-            });
-        });
-        //$('.modal').modal('show');
-    }
     renderProducts() {
         return this.props.productList.map((product) => {
             return (
-                <div key={product.Id} className="col-sm-3 col-md-3 product-list">
+                <div key={product.id} className="col-sm-3 col-md-3 product-list">
                     <div className="thumbnail">
                         <img src="/images/product.jpg" alt="..." />
                         <div className="caption">
-                            <div className="product-title">{product.Name}</div>
+                            <div className="product-title">{product.name}</div>
                             <div>
                                 <span className="pull-left">
                                     <strong>
-                                        {this.currencyFormat(product.Price)}
+                                        {this.currencyFormat(product.price)}
                                     </strong>
                                 </span>
-                                <a onClick={() => this.addToCarts(product.Id)} className="btn btn-xs btn-success pull-right" role="button" >
-                                    Add To Cart
-                                </a>
+                                <Link to={"/web/productdetail/"+product.id} className="btn btn-xs btn-success pull-right">Go to Detail</Link>
                             </div>
                         </div>
                     </div>
