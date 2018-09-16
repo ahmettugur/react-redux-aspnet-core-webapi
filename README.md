@@ -46,8 +46,8 @@ dotnet run
 cd OnlineStoreCoreWebApi/OnlineStore.MQService
 dotnet run
 
-open yor browser go to thr product detail page (http&#58;//localhost:3000/web/products)
-and open another tab on your browser and theen go to admin product update page (http&#58;//localhost:3000/admin)
+open yor browser go to thr product detail page (- http&#58;//localhost:3000/web/products)
+and open another tab on your browser and theen go to admin product update page ( - http&#58;//localhost:3000/admin)
 and chenge product stock quantity
 
 
