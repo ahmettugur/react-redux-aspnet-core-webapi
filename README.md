@@ -4,8 +4,8 @@ Single page basic Online Store app; React and Redux with ASP.NET CORE 2.0 Web Ap
 - RabbitMQ,
 - SignalR
 - Generic Repostory Pattern (Entity Framework Reository and Dapper Repository)
-- Asp.Net Core 2.0
-- Entity Framework Core 2.0
+- Asp.Net Core 2.1.4
+- Entity Framework Core 2.1.3
 - Dapper
 - JwtBearer Token Authentication
 - Dependency Injection
@@ -22,7 +22,7 @@ Single page basic Online Store app; React and Redux with ASP.NET CORE 2.0 Web Ap
 
 # Prerequisites
   
-  - .NetFramework 4.7 (Asp.Net Core 20 +) (VS 2015/2017)  
+  - .NetFramework 4.7 (Asp.Net Core 2.1.4) (VS 2015/2017)  
   - node.js 8 >
 
 ### Database and RabbitMQ
@@ -46,11 +46,9 @@ dotnet run
 cd OnlineStoreCoreWebApi/OnlineStore.MQService
 dotnet run
 
-open yor browser go to thr product detail page
-- http&#58;//localhost:3000/web/products
-and open another tab on your browser and theen go to admin product update page 
-- http&#58;//localhost:3000/admin
-and chenge product stock quantity
+open yor browser go to thr product detail page(localhost:3000/web/products)
+and open another tab on your browser and theen go to admin product update page (localhost:3000/admin)
+and change product stock quantity
 
 
 ```
