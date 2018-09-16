@@ -26,10 +26,10 @@ Single page basic Online Store app; React and Redux with ASP.NET CORE 2.0 Web Ap
   - node.js 8 >
 
 ### Database and RabbitMQ
-```sh
-Download [RabbitMQ](https://www.rabbitmq.com/download.html) Install your computer
-Open SQL Server Management Studio > File > Open > File  select Store.sql and execute
-Change OnlineStore.API > appsettings.json file connection string Data Source your server name
+
+* Download [RabbitMQ](https://www.rabbitmq.com/download.html) Install your computer
+* Open SQL Server Management Studio > File > Open > File  select Store.sql and execute
+* Change OnlineStore.API > appsettings.json file connection string Data Source your server name
 ```
 
 ### Installation Node Module
