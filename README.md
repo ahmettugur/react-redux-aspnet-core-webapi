@@ -1,8 +1,8 @@
-Single page basic Online Store app; RabbirMQ, SignalR, Realtime stock control React and Redux with ASP.NET CORE 2.0 Web Api.
+Single page basic Online Store app; RabbirMQ, SignalR, Realtime stock control React and Redux with ASP.NET CORE 2.1.4 Web Api.
 
 # Web API
 - RabbitMQ,
-- SignalR
+- SignalR Realtime Stock Control
 - Generic Repostory Pattern (Entity Framework Reository and Dapper Repository)
 - Asp.Net Core 2.1.4
 - Entity Framework Core 2.1.3
