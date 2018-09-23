@@ -11,6 +11,7 @@
           "Microsoft.AspNetCore.SignalR.Client": "1.0.3",
           "Newtonsoft.Json": "11.0.2",
           "OnlineStore.Entity": "1.0.0",
+          "OnlineStore.MQ": "1.0.0",
           "OnlineStore.Utilities": "1.0.0",
           "RabbitMQ.Client": "5.1.0"
         },
@@ -1272,6 +1273,17 @@
           "OnlineStore.Entity.dll": {}
         }
       },
+      "OnlineStore.MQ/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "OnlineStore.Core.Contracts": "1.0.0",
+          "OnlineStore.Utilities": "1.0.0",
+          "RabbitMQ.Client": "5.1.0"
+        },
+        "runtime": {
+          "OnlineStore.MQ.dll": {}
+        }
+      },
       "OnlineStore.Utilities/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
@@ -2119,6 +2131,11 @@
       "sha512": ""
     },
     "OnlineStore.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineStore.MQ/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

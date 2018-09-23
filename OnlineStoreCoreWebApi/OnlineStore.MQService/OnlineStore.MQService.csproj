@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\OnlineStore.Utilities\OnlineStore.Utilities.csproj" />
     <ProjectReference Include="..\OnlineStore.Entity\OnlineStore.Entity.csproj" />
+    <ProjectReference Include="..\OnlineStore.MQ\OnlineStore.MQ.csproj" />
   </ItemGroup>
 
 </Project>

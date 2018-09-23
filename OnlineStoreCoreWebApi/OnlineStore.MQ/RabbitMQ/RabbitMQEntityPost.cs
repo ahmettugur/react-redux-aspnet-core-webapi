@@ -21,10 +21,11 @@ namespace OnlineStore.MQ.RabbitMQ
             string returnValue = "";
             try
             {
-                var MessageQueueHostName = AppSettingsHelper.GetAppSettings("MessageQueueHostName");
+                var rabbitMQService = new RabbitMQService();
+
                 var queueName = AppSettingsHelper.GetAppSettings(_queueName);
-                var factory = new ConnectionFactory() { HostName = MessageQueueHostName };
-                using (var connection = factory.CreateConnection())
+               
+                using (var connection = rabbitMQService.CreateConnection())
                 {
                     using (var channel = connection.CreateModel())
                     {

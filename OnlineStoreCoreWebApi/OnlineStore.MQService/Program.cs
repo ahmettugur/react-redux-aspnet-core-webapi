@@ -7,6 +7,7 @@ using OnlineStore.Utilities;
 using OnlineStore.Entity.Concrete;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
+using OnlineStore.MQ.RabbitMQ;
 
 namespace OnlineStore.MQService
 {
@@ -16,11 +17,12 @@ namespace OnlineStore.MQService
         static void Main(string[] args)
         {
             Connect().Wait();
-            var MessageQueueHostName = AppSettingsHelper.GetAppSettings("MessageQueueHostName");
+            
+            var rabbitMQService = new RabbitMQService();
+
             var queueName = AppSettingsHelper.GetAppSettings("ProductQueue");
 
-            var factory = new ConnectionFactory() { HostName = MessageQueueHostName };
-            using (var connection = factory.CreateConnection())
+            using (var connection = rabbitMQService.CreateConnection())
             {
                 using (var channel = connection.CreateModel())
                 {

@@ -1968,6 +1968,22 @@
           "bin/placeholder/OnlineStore.Entity.dll": {}
         }
       },
+      "OnlineStore.MQ/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "OnlineStore.Core.Contracts": "1.0.0",
+          "OnlineStore.Utilities": "1.0.0",
+          "RabbitMQ.Client": "5.1.0"
+        },
+        "compile": {
+          "bin/placeholder/OnlineStore.MQ.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OnlineStore.MQ.dll": {}
+        }
+      },
       "OnlineStore.Utilities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -6384,6 +6400,11 @@
       "path": "../OnlineStore.Entity/OnlineStore.Entity.csproj",
       "msbuildProject": "../OnlineStore.Entity/OnlineStore.Entity.csproj"
     },
+    "OnlineStore.MQ/1.0.0": {
+      "type": "project",
+      "path": "../OnlineStore.MQ/OnlineStore.MQ.csproj",
+      "msbuildProject": "../OnlineStore.MQ/OnlineStore.MQ.csproj"
+    },
     "OnlineStore.Utilities/1.0.0": {
       "type": "project",
       "path": "../OnlineStore.Utilities/OnlineStore.Utilities.csproj",
@@ -6396,6 +6417,7 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Newtonsoft.Json >= 11.0.2",
       "OnlineStore.Entity >= 1.0.0",
+      "OnlineStore.MQ >= 1.0.0",
       "OnlineStore.Utilities >= 1.0.0",
       "RabbitMQ.Client >= 5.1.0"
     ]
@@ -6430,6 +6452,9 @@
           "projectReferences": {
             "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Entity/OnlineStore.Entity.csproj": {
               "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Entity/OnlineStore.Entity.csproj"
+            },
+            "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/OnlineStore.MQ.csproj": {
+              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQ/OnlineStore.MQ.csproj"
             },
             "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Utilities/OnlineStore.Utilities.csproj": {
               "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Utilities/OnlineStore.Utilities.csproj"

@@ -18,3 +18,5 @@
 /home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQService/obj/Debug/netcoreapp2.1/OnlineStore.MQService.csproj.CopyComplete
 /home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQService/obj/Debug/netcoreapp2.1/OnlineStore.MQService.dll
 /home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQService/obj/Debug/netcoreapp2.1/OnlineStore.MQService.pdb
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQService/bin/Debug/netcoreapp2.1/OnlineStore.MQ.dll
+/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.MQService/bin/Debug/netcoreapp2.1/OnlineStore.MQ.pdb
