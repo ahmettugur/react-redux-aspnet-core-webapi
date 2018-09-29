@@ -14372,11 +14372,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.API/OnlineStore.API.csproj",
+      "projectUniqueName": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.API/OnlineStore.API.csproj",
       "projectName": "OnlineStore.API",
-      "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.API/OnlineStore.API.csproj",
+      "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.API/OnlineStore.API.csproj",
       "packagesPath": "/home/ahmet/.nuget/packages/",
-      "outputPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.API/obj/",
+      "outputPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.API/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -14393,14 +14393,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business.Contracts/OnlineStore.Business.Contracts.csproj": {
-              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business.Contracts/OnlineStore.Business.Contracts.csproj"
+            "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Business.Contracts/OnlineStore.Business.Contracts.csproj": {
+              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Business.Contracts/OnlineStore.Business.Contracts.csproj"
             },
-            "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business/OnlineStore.Business.csproj": {
-              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business/OnlineStore.Business.csproj"
+            "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Business/OnlineStore.Business.csproj": {
+              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Business/OnlineStore.Business.csproj"
             },
-            "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data/OnlineStore.Data.csproj": {
-              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data/OnlineStore.Data.csproj"
+            "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Data/OnlineStore.Data.csproj": {
+              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Data/OnlineStore.Data.csproj"
             }
           }
         }
