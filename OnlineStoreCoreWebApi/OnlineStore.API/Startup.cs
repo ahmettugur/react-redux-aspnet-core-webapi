@@ -117,7 +117,7 @@ namespace OnlineStore.API
             app.UseSwagger()
             .UseSwaggerUI(c =>
                 {
-                    c.SwaggerEndpoint("/swagger/CoreSwagger/swagger.json", "Swagger Test .Net Core");
+                    c.SwaggerEndpoint("/swagger/CoreSwagger/swagger.json", "Swagger Test .Net Core ");
                 });
 
             //app.UseCors(b => b.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
