@@ -10,6 +10,7 @@ Single page basic Online Store app; RabbirMQ, SignalR with realtime stock contro
 - JwtBearer Token Authentication
 - Dependency Injection
 - EPPlus Excel Download
+- Swagger API Documentation
 
 # React Component
   - redux-from
