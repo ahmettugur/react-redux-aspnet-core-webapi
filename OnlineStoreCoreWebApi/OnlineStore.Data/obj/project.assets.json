@@ -3670,11 +3670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Data/OnlineStore.Data.csproj",
+      "projectUniqueName": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data/OnlineStore.Data.csproj",
       "projectName": "OnlineStore.Data",
-      "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Data/OnlineStore.Data.csproj",
+      "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data/OnlineStore.Data.csproj",
       "packagesPath": "/home/ahmet/.nuget/packages/",
-      "outputPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Data/obj/",
+      "outputPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -3691,11 +3691,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Core/OnlineStore.Core.csproj": {
-              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Core/OnlineStore.Core.csproj"
+            "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core/OnlineStore.Core.csproj": {
+              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core/OnlineStore.Core.csproj"
             },
-            "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Data.Contracts/OnlineStore.Data.Contracts.csproj": {
-              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Data.Contracts/OnlineStore.Data.Contracts.csproj"
+            "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data.Contracts/OnlineStore.Data.Contracts.csproj": {
+              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data.Contracts/OnlineStore.Data.Contracts.csproj"
             }
           }
         }

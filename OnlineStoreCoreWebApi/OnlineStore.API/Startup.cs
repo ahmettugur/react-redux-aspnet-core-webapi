@@ -20,6 +20,7 @@ using OnlineStore.Data.Dapper;
 using OnlineStore.API.Middlewares;
 using Microsoft.AspNetCore.Mvc;
 using OnlineStore.API.Controllers;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace OnlineStore.API
 {
@@ -65,6 +66,36 @@ namespace OnlineStore.API
                 };
             });
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("CoreSwagger", new Info
+                {
+                    Title = "Swagger on ASP.NET Core",
+                    Version = "1.0.0",
+                    Description = "Try Swagger on (ASP.NET Core 2.1)",
+                    Contact = new Contact()
+                    {
+                        Name = "",
+                        Url = "",
+                        Email = "ahmet_tgr@hotmaail.com"
+                    },
+                    TermsOfService = "http://swagger.io/terms/"
+                });
+
+                c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
+                {
+                    { "Bearer", new string[] { } }
+                });
+            
+                c.AddSecurityDefinition("Bearer", new ApiKeyScheme()
+                {                    
+                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
+                    Name = "Authorization",
+                    In = "header",
+                    Type = "apiKey",                                        
+                });    
+            });
+
             services.AddCors();
             //services.AddMvc();
             // services.AddMvc()
@@ -82,6 +113,13 @@ namespace OnlineStore.API
             }
 
             app.UseStaticFiles();
+
+            app.UseSwagger()
+            .UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/CoreSwagger/swagger.json", "Swagger Test .Net Core");
+                });
+
             //app.UseCors(b => b.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
             app.UseCors(_=>_.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
             app.UseAuthentication();

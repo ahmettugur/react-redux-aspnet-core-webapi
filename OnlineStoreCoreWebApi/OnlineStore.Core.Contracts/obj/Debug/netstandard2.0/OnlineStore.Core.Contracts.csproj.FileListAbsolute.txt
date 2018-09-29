@@ -7,3 +7,12 @@
 /home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.AssemblyInfo.cs
 /home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.dll
 /home/ahmet/Desktop/AspNetCoreExample/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.pdb
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/bin/Debug/netstandard2.0/OnlineStore.Core.Contracts.deps.json
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/bin/Debug/netstandard2.0/OnlineStore.Core.Contracts.dll
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/bin/Debug/netstandard2.0/OnlineStore.Core.Contracts.pdb
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.csprojAssemblyReference.cache
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.csproj.CoreCompileInputs.cache
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.AssemblyInfoInputs.cache
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.AssemblyInfo.cs
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.dll
+/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/Debug/netstandard2.0/OnlineStore.Core.Contracts.pdb
