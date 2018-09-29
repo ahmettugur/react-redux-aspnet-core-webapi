@@ -70,9 +70,9 @@ namespace OnlineStore.API
             {
                 c.SwaggerDoc("CoreSwagger", new Info
                 {
-                    Title = "Swagger on ASP.NET Core",
+                    Title = "Swagger on OnlineStore.API",
                     Version = "1.0.0",
-                    Description = "Try Swagger on (ASP.NET Core 2.1)",
+                    Description = "Swagger on nlineStore.API (ASP.NET Core 2.1)",
                     Contact = new Contact()
                     {
                         Name = "",
