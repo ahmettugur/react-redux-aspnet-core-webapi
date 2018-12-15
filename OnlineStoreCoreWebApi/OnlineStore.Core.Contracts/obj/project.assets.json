@@ -30,10 +30,12 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -182,11 +184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/OnlineStore.Core.Contracts.csproj",
+      "projectUniqueName": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/OnlineStore.Core.Contracts.csproj",
       "projectName": "OnlineStore.Core.Contracts",
-      "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/OnlineStore.Core.Contracts.csproj",
+      "projectPath": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/OnlineStore.Core.Contracts.csproj",
       "packagesPath": "/home/ahmet/.nuget/packages/",
-      "outputPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/",
+      "outputPath": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Core.Contracts/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

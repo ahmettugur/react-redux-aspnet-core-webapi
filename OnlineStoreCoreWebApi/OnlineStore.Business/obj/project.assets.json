@@ -1816,10 +1816,11 @@
       ]
     },
     "Microsoft.EntityFrameworkCore/2.1.3": {
-      "sha512": "6kqtYtOQ0JeIZzphP5ZSBY5J+ZEvrOQj9PcqEcpGW7D/Six8UTrmjaAJfDDAt26LYRa8GrUw6iC+JDw1rO6Z3g==",
+      "sha512": "2OVk5EXzoiMw3A58yOIDz7vQF1Y5SottdIdfjZbLkA/R8g0FyfWjwAd84i2dPYQwxxLwzbrdfUt2z3wftK3jgg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore/2.1.3",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.xml",
@@ -1828,10 +1829,11 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Abstractions/2.1.3": {
-      "sha512": "MhhNQxQFr0xVWv7D8QY+Y987PzbE7DyhBdohJGSZ6QDmQFnJDClqLhiRbyGtsb4GDiMGFVRYGo7Qb2wrHpDhXw==",
+      "sha512": "Hp5EO04q56CO6AL6dbaTb3HXEyPHMnB5Wn648Pr12MuD5KW7/aJA4oO1nlnNAgpvQ8NHkh/QnlzfwjaKnYxQSw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.abstractions/2.1.3",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
@@ -1840,10 +1842,11 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Analyzers/2.1.3": {
-      "sha512": "A6zc0ilojdVi4rZv1r0RlVNT+eYsqtTiSgxHTaQ+3Ktki8B6Ggjk6p6QXi9RalYsUiJlOrZr3VL9MtjUJIhoYQ==",
+      "sha512": "iKbcrt4cbudYxh1YS0apS7sDsoDK7nDGbWKBb5XHxnkFPiOPhlkXxEkUeMyMYIhhEZ/pgc/C/AlL8A+gLQtRIw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.analyzers/2.1.3",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "microsoft.entityframeworkcore.analyzers.2.1.3.nupkg.sha512",
@@ -1875,10 +1878,11 @@
       ]
     },
     "Microsoft.Extensions.Configuration/2.1.1": {
-      "sha512": "1JaydycXzbfAExlsD7XIWykzVnU/wZM86KzrHyGlXuxqnqzcWSXLJn4Ejn8bDnq07CEJNZ+GjsxWKlJ8kFfnvQ==",
+      "sha512": "VVYOfsEO/kjpMiXfSVV6zDV0jOzM7y9rpWqPRNfkHidGJlZbut9OW4ehgBb82h5al0cpQoeNBqFKJZ2Q8/qwHQ==",
       "type": "package",
       "path": "microsoft.extensions.configuration/2.1.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
@@ -1887,10 +1891,11 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Abstractions/2.1.1": {
-      "sha512": "9EMhOWU2eOQOtMIJ+vfwKJpnLRc1Wl3vXu8qXeevA91cSY4j3WvArmF7ApGtJwa7yKewJTvlQlBSn9OSnLFg6Q==",
+      "sha512": "QN0e+FNqqmmFomoRGmjg4VsbXofdTe6jl2C5CoYi34V4cdFT4x+KyBPZ1femUS4+tg/BK+m2YgCHGrcICYb2Ng==",
       "type": "package",
       "path": "microsoft.extensions.configuration.abstractions/2.1.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
@@ -1911,10 +1916,11 @@
       ]
     },
     "Microsoft.Extensions.Configuration.FileExtensions/2.1.1": {
-      "sha512": "JnhKotPCs1+X4CPSsHOk8CpxmBeIS/vIXYewsoM8XflXNhpzMe1gfIckQyuRKyORlGaNFEBr4WrPjpZ159bS/Q==",
+      "sha512": "w8QNDE/6yBYc41h1xxPlYIfdwdwdv7szdQs1lqyINfEPlC4/SZ81wyB+EUblmrQ7OYk5WJh2UF0MKtwJ3mjUkw==",
       "type": "package",
       "path": "microsoft.extensions.configuration.fileextensions/2.1.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
@@ -1923,10 +1929,11 @@
       ]
     },
     "Microsoft.Extensions.Configuration.Json/2.1.1": {
-      "sha512": "f6KcI9v0GVA4YL/ExoxrEfeQv9La3hyQnySfgxGkFtMeDJIUun0ANoMjspbdpXXnuaScwgbQ2mFE3lJHt9lpJw==",
+      "sha512": "2CRgQ1ojSLI0h9xDqt46T4oIRP4bUFZnYmsp/Se/cjGYbq6w5Fxl+H3JfxrOmCkoS+1/yXLAfeoYmF0U3QA1cA==",
       "type": "package",
       "path": "microsoft.extensions.configuration.json/2.1.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
@@ -1935,10 +1942,11 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/2.1.1": {
-      "sha512": "2nshYaLTn73Ie+/yTkb7EZIXwQeFIXsYCBy/jSY9bMayYykGNjdWa25frayhuPAGVbZpEgfgp3d4JRVEuVyEqQ==",
+      "sha512": "ZPFcDUbSwaEVWMyef8+9GqiTAghHX+eLeIEW032i4LDFAdyM4J4brV0UzChlKtClT7cuip/Of6G+veDnO3/bCw==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/2.1.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
         "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
@@ -2035,10 +2043,11 @@
       ]
     },
     "Microsoft.Extensions.Primitives/2.1.1": {
-      "sha512": "Svz25/egj1TsNL4118jyMqkhDiu0l8QYWq2p52P4BBN0GbqwR18ZRIctSP5TTDJy0m0EFC8aB2FOVjGtvEGWSA==",
+      "sha512": "jVkZs8NkUIhooFh8iJFIGJAJAeTrwORjM06i4sBw+/VVC8zcqduCIG1QCqjxbGACbR+GkLEnhZdxLjL8qHLHIg==",
       "type": "package",
       "path": "microsoft.extensions.primitives/2.1.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
@@ -2047,10 +2056,12 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -2274,10 +2285,12 @@
       ]
     },
     "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
       "type": "package",
       "path": "newtonsoft.json/11.0.2",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -2315,10 +2328,12 @@
       ]
     },
     "Remotion.Linq/2.2.0": {
-      "sha512": "fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
+      "sha512": "twDAH8dAXXCAf3sRv1Tf94u66eEHvgU75hfn1nn2v4fSWXD50XoDOAk8WpSrbViNuMkB4kN1ElnOGm1c519IHg==",
       "type": "package",
       "path": "remotion.linq/2.2.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net35/Remotion.Linq.XML",
         "lib/net35/Remotion.Linq.dll",
         "lib/net40/Remotion.Linq.XML",
@@ -3336,10 +3351,12 @@
       ]
     },
     "System.Interactive.Async/3.1.1": {
-      "sha512": "hZccYiIE5RS1/J9Tb/BNtosAGVggdlsJm4Ojdu+gDV0p4AIi+LUfUogMKkRacljQEJd2AG6vYzvcjhQFkqoZmw==",
+      "sha512": "x9y2omkjEudKbIVuhUzeWw7ZlouEzpk4W98woCEq1lq9gJxERBKRKDTHF5JPEws9E0f4/Uei/2vLxEy1IrfmMg==",
       "type": "package",
       "path": "system.interactive.async/3.1.1",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net45/System.Interactive.Async.dll",
         "lib/net45/System.Interactive.Async.xml",
         "lib/net46/System.Interactive.Async.dll",
@@ -3714,10 +3731,11 @@
       ]
     },
     "System.Memory/4.5.1": {
-      "sha512": "vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
+      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
       "type": "package",
       "path": "system.memory/4.5.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -4556,10 +4574,11 @@
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.1": {
-      "sha512": "qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
+      "sha512": "x/3d5xb+mc9e4I2GOOT+HPRWMZLbYjNN/kYKsb0fyUKcWizn/t1CIrGRLIBhv7H0ptYEt+WTTztdPmwSUMyKig==",
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -5750,11 +5769,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business/OnlineStore.Business.csproj",
+      "projectUniqueName": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Business/OnlineStore.Business.csproj",
       "projectName": "OnlineStore.Business",
-      "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business/OnlineStore.Business.csproj",
+      "projectPath": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Business/OnlineStore.Business.csproj",
       "packagesPath": "/home/ahmet/.nuget/packages/",
-      "outputPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business/obj/",
+      "outputPath": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Business/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -5771,14 +5790,14 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business.Contracts/OnlineStore.Business.Contracts.csproj": {
-              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Business.Contracts/OnlineStore.Business.Contracts.csproj"
+            "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Business.Contracts/OnlineStore.Business.Contracts.csproj": {
+              "projectPath": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Business.Contracts/OnlineStore.Business.Contracts.csproj"
             },
-            "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data.Contracts/OnlineStore.Data.Contracts.csproj": {
-              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.Data.Contracts/OnlineStore.Data.Contracts.csproj"
+            "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Data.Contracts/OnlineStore.Data.Contracts.csproj": {
+              "projectPath": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.Data.Contracts/OnlineStore.Data.Contracts.csproj"
             },
-            "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.MQ/OnlineStore.MQ.csproj": {
-              "projectPath": "/home/ahmet/Desktop/AspNetCoreExample/swg/OnlineStoreCoreWebApi/OnlineStore.MQ/OnlineStore.MQ.csproj"
+            "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.MQ/OnlineStore.MQ.csproj": {
+              "projectPath": "/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.MQ/OnlineStore.MQ.csproj"
             }
           }
         }

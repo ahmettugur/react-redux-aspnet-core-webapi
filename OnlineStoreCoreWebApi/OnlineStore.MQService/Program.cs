@@ -28,7 +28,7 @@ namespace OnlineStore.MQService
                 {
                     //Connect().Wait();
                     channel.QueueDeclare(queue: queueName,
-                                        durable: false,
+                                        durable: true,
                                         exclusive: false,
                                         autoDelete: false,
                                         arguments: null);

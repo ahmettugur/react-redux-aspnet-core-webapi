@@ -30,17 +30,20 @@ namespace OnlineStore.MQ.RabbitMQ
                     using (var channel = connection.CreateModel())
                     {
                         channel.QueueDeclare(queue: queueName,
-                                            durable: false,
+                                            durable: true,
                                             exclusive: false,
                                             autoDelete: false,
                                             arguments: null);
             
                         var queueDate = JsonConvert.SerializeObject(data);
                         var body = Encoding.UTF8.GetBytes(queueDate);
+
+                        var properties = channel.CreateBasicProperties();
+                        properties.Persistent = true;
             
                         channel.BasicPublish(exchange: "",
                                             routingKey: queueName,
-                                            basicProperties: null,
+                                            basicProperties: properties,
                                             body: body);
 
                         returnValue = $"Registration was sent to the {queueName} queue.";
