@@ -1,4 +1,4 @@
-Single page basic Online Store app; RabbirMQ, SignalR with realtime stock control React and Redux with ASP.NET CORE 2.1.4 Web Api.
+Single page basic Online Store app; RabbirMQ, SignalR with near realtime stock control React and Redux with ASP.NET CORE 2.1.4 Web Api.
 
 # Web API
 - RabbitMQ,
