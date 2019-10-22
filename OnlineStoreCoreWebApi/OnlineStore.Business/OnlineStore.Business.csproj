@@ -1,18 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
   <ItemGroup>
+    <ProjectReference Include="..\ATCommon.Aspect\ATCommon.Aspect.csproj" />
+    <ProjectReference Include="..\ATCommon.Logging\ATCommon.Logging.csproj" />
     <ProjectReference Include="..\OnlineStore.Business.Contracts\OnlineStore.Business.Contracts.csproj" />
     <ProjectReference Include="..\OnlineStore.Data.Contracts\OnlineStore.Data.Contracts.csproj" />
+    <ProjectReference Include="..\OnlineStore.Entity\OnlineStore.Entity.csproj" />
     <ProjectReference Include="..\OnlineStore.MQ\OnlineStore.MQ.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="RabbitMQ.Client" Version="5.1.0" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
 
 </Project>

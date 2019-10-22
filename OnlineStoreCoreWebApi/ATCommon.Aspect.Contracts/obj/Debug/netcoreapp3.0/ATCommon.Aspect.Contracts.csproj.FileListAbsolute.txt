@@ -1,0 +1,7 @@
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.deps.json
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.AssemblyInfo.cs
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.pdb

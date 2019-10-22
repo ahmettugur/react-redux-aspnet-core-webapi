@@ -1,0 +1,11 @@
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\bin\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\obj\Debug\netcoreapp3.0\ATCommon.Logging.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\obj\Debug\netcoreapp3.0\ATCommon.Logging.AssemblyInfo.cs
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\bin\Debug\netcoreapp3.0\ATCommon.Logging.deps.json
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\bin\Debug\netcoreapp3.0\ATCommon.Logging.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\bin\Debug\netcoreapp3.0\ATCommon.Logging.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\bin\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\obj\Debug\netcoreapp3.0\ATCommon.Logging.csprojAssemblyReference.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\obj\Debug\netcoreapp3.0\ATCommon.Logging.csproj.CopyComplete
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\obj\Debug\netcoreapp3.0\ATCommon.Logging.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging\obj\Debug\netcoreapp3.0\ATCommon.Logging.pdb

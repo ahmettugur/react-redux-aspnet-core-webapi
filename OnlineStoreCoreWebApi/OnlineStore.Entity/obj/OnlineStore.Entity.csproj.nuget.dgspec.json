@@ -1,0 +1,202 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Entity\\OnlineStore.Entity.csproj": {}
+  },
+  "projects": {
+    "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj",
+        "projectName": "OnlineStore.Core.Contracts",
+        "projectPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj",
+        "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
+        "outputPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\atugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core\\OnlineStore.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core\\OnlineStore.Core.csproj",
+        "projectName": "OnlineStore.Core",
+        "projectPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core\\OnlineStore.Core.csproj",
+        "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
+        "outputPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\atugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj": {
+                "projectPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Entity\\OnlineStore.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Entity\\OnlineStore.Entity.csproj",
+        "projectName": "OnlineStore.Entity",
+        "projectPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Entity\\OnlineStore.Entity.csproj",
+        "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
+        "outputPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\atugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj": {
+                "projectPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core.Contracts\\OnlineStore.Core.Contracts.csproj"
+              },
+              "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core\\OnlineStore.Core.csproj": {
+                "projectPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.Core\\OnlineStore.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

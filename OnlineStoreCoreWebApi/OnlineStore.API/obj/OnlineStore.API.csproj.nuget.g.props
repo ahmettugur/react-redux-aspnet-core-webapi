@@ -3,27 +3,20 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
-    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">/home/ahmet/Desktop/Applications/AspNetCoreExample/ReactAndReduxWithAspNetCore2WebApi/OnlineStoreCoreWebApi/OnlineStore.API/obj/project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/ahmet/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/ahmet/.nuget/packages/;/usr/share/dotnet/sdk/NuGetFallbackFolder</NuGetPackageFolders>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\atugur\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">4.9.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.3.0</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.extensions.fileproviders.embedded/2.1.1/build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props" Condition="Exists('/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.extensions.fileproviders.embedded/2.1.1/build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props')" />
-    <Import Project="/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.app/2.1.0/build/netcoreapp2.1/Microsoft.NETCore.App.props" Condition="Exists('/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.app/2.1.0/build/netcoreapp2.1/Microsoft.NETCore.App.props')" />
-    <Import Project="/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.extensions.configuration.usersecrets/2.1.1/build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.extensions.configuration.usersecrets/2.1.1/build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design/2.1.3/build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design/2.1.3/build/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.mvc.razor.extensions/2.1.2/build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.mvc.razor.extensions/2.1.2/build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.razor.design/2.1.2/build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.razor.design/2.1.2/build/netstandard2.0/Microsoft.AspNetCore.Razor.Design.props')" />
-    <Import Project="/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.app/2.1.1/build/netcoreapp2.1/Microsoft.AspNetCore.App.props" Condition="Exists('/usr/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.app/2.1.1/build/netcoreapp2.1/Microsoft.AspNetCore.App.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.all/2.1.4/build/netcoreapp2.1/Microsoft.AspNetCore.All.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.all/2.1.4/build/netcoreapp2.1/Microsoft.AspNetCore.All.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\0.3.0-preview7.19365.7\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\0.3.0-preview7.19365.7\build\Microsoft.Extensions.ApiDescription.Server.props')" />
+    <Import Project="$(NuGetPackageRoot)nswag.aspnetcore\13.1.2\build\NSwag.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)nswag.aspnetcore\13.1.2\build\NSwag.AspNetCore.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">/home/ahmet/.nuget/packages/microsoft.entityframeworkcore.tools/2.1.3</PkgMicrosoft_EntityFrameworkCore_Tools>
-    <PkgMicrosoft_AspNetCore_Razor_Design Condition=" '$(PkgMicrosoft_AspNetCore_Razor_Design)' == '' ">/home/ahmet/.nuget/packages/microsoft.aspnetcore.razor.design/2.1.2</PkgMicrosoft_AspNetCore_Razor_Design>
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\atugur\.nuget\packages\microsoft.extensions.apidescription.server\0.3.0-preview7.19365.7</PkgMicrosoft_Extensions_ApiDescription_Server>
   </PropertyGroup>
 </Project>

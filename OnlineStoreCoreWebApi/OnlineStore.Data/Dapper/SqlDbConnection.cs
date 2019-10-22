@@ -20,7 +20,8 @@ namespace OnlineStore.Data.Dapper
 
         public SqlConnection GetSqlServerConnection()
         {
-            return new SqlConnection(Configuration["ConnectionStrings:OnlineStoreContext"]);
+            string connStr = Configuration["ConnectionStrings:OnlineStoreContext"];
+            return new SqlConnection(connStr);
         }
     }
 }

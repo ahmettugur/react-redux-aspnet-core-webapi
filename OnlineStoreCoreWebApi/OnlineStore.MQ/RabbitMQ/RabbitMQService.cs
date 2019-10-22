@@ -1,5 +1,5 @@
 using System;
-using OnlineStore.Utilities;
+using ATCommon.Utilities;
 using RabbitMQ.Client;
 
 namespace OnlineStore.MQ.RabbitMQ

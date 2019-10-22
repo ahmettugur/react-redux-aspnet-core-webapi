@@ -1,0 +1,25 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "OnlineStore.GrpcService.Protos";
+
+package Product;
+
+service ProducController {
+	rpc GetAll(google.protobuf.Empty) returns (ProductResponse);
+}
+
+message ProductRequest {}
+
+message ProductResponse {
+	repeated ProductDTO products =1;
+}
+
+message ProductDTO {
+	int32 Id =1;
+	int32 CategoryId =2;
+	string Name =3;
+	string Details =4;
+	double Price =5;
+	int32 StockQuantity =6;
+}

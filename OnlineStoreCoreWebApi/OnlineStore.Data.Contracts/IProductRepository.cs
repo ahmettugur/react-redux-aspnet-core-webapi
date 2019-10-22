@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnlineStore.Data.Contracts
 {
-    public interface IProductRepository:IGenericRepository<Product>
+    public interface IProductRepository : IGenericRepository<Product>
     {
         List<ProductWithCategory> GetAllProductWithCategory();
     }

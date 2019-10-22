@@ -2,10 +2,9 @@ using System;
 using System.Text;
 using Newtonsoft.Json;
 using OnlineStore.Core.Contracts.Entities;
-using OnlineStore.Utilities;
 using RabbitMQ.Client;
 using System.IO;
-
+using ATCommon.Utilities;
 
 namespace OnlineStore.MQ.RabbitMQ
 {

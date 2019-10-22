@@ -1,10 +1,10 @@
 import axios from "axios"
 import getCart from "../components/cart/cart-store"
 
-const API_URL = 'http://localhost:1977';
+const API_URL = 'http://localhost:2519';
 const PRODUCT_LIST_URL = "/api/products";
 const PRODUCT_DETAIL_URL = "/api/products/detail"
-const ACCES_TOKEN_URL = "/token";
+const ACCES_TOKEN_URL = "/api/Token/token";
 const PRODUCT_CRUD_URL = "/api/admin/products";
 const CATEGORY_CRUD_URL = "/api/categories";
 export const PRODUCT_EXCEL_DOWNLOAD_URL = API_URL + "/api/admin/products/download"

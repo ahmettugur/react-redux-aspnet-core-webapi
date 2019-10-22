@@ -1,0 +1,15 @@
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Aspect.deps.json
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Aspect.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\obj\Debug\netcoreapp3.0\ATCommon.Aspect.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\obj\Debug\netcoreapp3.0\ATCommon.Aspect.AssemblyInfo.cs
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\obj\Debug\netcoreapp3.0\ATCommon.Aspect.csprojAssemblyReference.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Aspect.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\obj\Debug\netcoreapp3.0\ATCommon.Aspect.csproj.CopyComplete
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Aspect.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\bin\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\obj\Debug\netcoreapp3.0\ATCommon.Aspect.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Aspect\obj\Debug\netcoreapp3.0\ATCommon.Aspect.pdb

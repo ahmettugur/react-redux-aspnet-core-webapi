@@ -1,0 +1,8 @@
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.deps.json
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.AssemblyInfo.cs
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.csprojAssemblyReference.cache

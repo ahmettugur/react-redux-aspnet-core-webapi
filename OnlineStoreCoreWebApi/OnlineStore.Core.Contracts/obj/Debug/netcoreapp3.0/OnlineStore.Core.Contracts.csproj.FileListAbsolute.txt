@@ -1,0 +1,15 @@
+D:\GithubProjectsTest\OnlineStore\OnlineStore.Core.Contracts\bin\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.deps.json
+D:\GithubProjectsTest\OnlineStore\OnlineStore.Core.Contracts\bin\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.dll
+D:\GithubProjectsTest\OnlineStore\OnlineStore.Core.Contracts\bin\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.pdb
+D:\GithubProjectsTest\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.AssemblyInfo.cs
+D:\GithubProjectsTest\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.dll
+D:\GithubProjectsTest\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.pdb
+D:\GithubProjectsTest\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.csprojAssemblyReference.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\OnlineStore.Core.Contracts\bin\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.deps.json
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\OnlineStore.Core.Contracts\bin\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\OnlineStore.Core.Contracts\bin\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.AssemblyInfo.cs
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\OnlineStore.Core.Contracts\obj\Debug\netcoreapp3.0\OnlineStore.Core.Contracts.pdb

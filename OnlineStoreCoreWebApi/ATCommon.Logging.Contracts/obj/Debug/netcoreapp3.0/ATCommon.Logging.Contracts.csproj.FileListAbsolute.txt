@@ -1,0 +1,7 @@
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.deps.json
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging.Contracts\bin\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.AssemblyInfo.cs
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Logging.Contracts\obj\Debug\netcoreapp3.0\ATCommon.Logging.Contracts.pdb

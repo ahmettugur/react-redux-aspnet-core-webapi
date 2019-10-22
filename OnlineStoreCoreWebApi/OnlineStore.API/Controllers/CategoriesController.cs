@@ -8,20 +8,22 @@ using OnlineStore.Business.Contracts;
 using OnlineStore.Entity.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using System.Threading;
+using ATCommon.Aspect.Contracts.Proxy;
 
 namespace OnlineStore.API.Controllers
 {
-    //[Produces("application/json")]
-    //[Route("api/Categories")]
+    [ApiController]
+    [Route("api/[controller]")]
     public class CategoriesController : Controller
     {
-        private ICategoryService _categoryService;
+        private readonly ICategoryService _categoryService;
         public CategoriesController(ICategoryService categoryService)
         {
-            _categoryService = categoryService;
+            _categoryService = CommonAspect<ICategoryService>.Create(categoryService);
+            //_categoryService = categoryService;
         }
 
-        [Route("api/categories")]
+        [Route("")]
         [HttpGet]
         public IActionResult CategoryList()
         {
@@ -35,7 +37,7 @@ namespace OnlineStore.API.Controllers
             }
         }
 
-        [Route("api/categories/{id}")]
+        [Route("{id}")]
         [HttpGet]
         public IActionResult Get(int id)
         {
@@ -52,7 +54,7 @@ namespace OnlineStore.API.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [Route("api/categories")]
+        [Route("")]
         [HttpPost]
         public IActionResult Post([FromBody] Category category)
         {
@@ -68,7 +70,7 @@ namespace OnlineStore.API.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [Route("api/categories")]
+        [Route("")]
         [HttpPut]
         public IActionResult Put([FromBody] Category category)
         {
@@ -85,7 +87,7 @@ namespace OnlineStore.API.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [Route("api/categories/{id}")]
+        [Route("{id}")]
         [HttpDelete]
         public IActionResult Delete(int id)
         {

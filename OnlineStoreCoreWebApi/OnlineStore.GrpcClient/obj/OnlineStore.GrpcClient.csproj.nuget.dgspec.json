@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.GrpcClient\\OnlineStore.GrpcClient.csproj": {}
+  },
+  "projects": {
+    "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.GrpcClient\\OnlineStore.GrpcClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.GrpcClient\\OnlineStore.GrpcClient.csproj",
+        "projectName": "OnlineStore.GrpcClient",
+        "projectPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.GrpcClient\\OnlineStore.GrpcClient.csproj",
+        "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
+        "outputPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\OnlineStore.GrpcClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\atugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.9.2, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.23.2, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.24.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

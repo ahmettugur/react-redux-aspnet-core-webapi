@@ -1,4 +1,6 @@
-﻿using OnlineStore.Business.Contracts;
+﻿using ATCommon.Aspect.Logging;
+using ATCommon.Logging;
+using OnlineStore.Business.Contracts;
 using OnlineStore.Data.Contracts;
 using OnlineStore.Entity.Concrete;
 using System;
@@ -33,6 +35,7 @@ namespace OnlineStore.Business.Services
             return _categoryRepository.Get(predicate);
         }
 
+        [LogAspect(typeof(JsonFileLogger))]
         public List<Category> GetAll(Expression<Func<Category, bool>> predicate = null)
         {
             return _categoryRepository.GetAll(predicate);

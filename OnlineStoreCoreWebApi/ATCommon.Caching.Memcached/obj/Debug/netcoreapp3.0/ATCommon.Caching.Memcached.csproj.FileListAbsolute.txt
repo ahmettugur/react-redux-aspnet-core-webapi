@@ -1,0 +1,13 @@
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\bin\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.deps.json
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\bin\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\obj\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\obj\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.AssemblyInfo.cs
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\obj\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.csprojAssemblyReference.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\obj\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.csproj.CopyComplete
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\bin\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\obj\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\obj\Debug\netcoreapp3.0\ATCommon.Caching.Memcached.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\bin\Debug\netcoreapp3.0\ATCommon.Utilities.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Memcached\bin\Debug\netcoreapp3.0\ATCommon.Utilities.pdb

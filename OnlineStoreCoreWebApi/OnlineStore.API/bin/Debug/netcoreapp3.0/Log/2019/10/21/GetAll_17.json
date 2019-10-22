@@ -1,0 +1,70 @@
+/*------------------ START 21.10.2019 17:31:37------------------*/
+{
+  "ClassName": "OnlineStore.Business.Services.CategoryService",
+  "MethodName": "GetAll",
+  "Parameters": [
+    {
+      "Name": "predicate",
+      "Type": "Expression`1",
+      "Value": null
+    }
+  ]
+}
+/*------------------ END 21.10.2019 17:31:37------------------*/
+
+/*------------------ START 21.10.2019 17:31:38------------------*/
+{
+  "ClassName": "OnlineStore.Business.Services.CategoryService",
+  "MethodName": "GetAll",
+  "Parameters": [
+    {
+      "Name": "predicate",
+      "Type": "Expression`1",
+      "Value": null
+    }
+  ],
+  "Result": [
+    {
+      "Id": 1,
+      "Name": "Beverages",
+      "Description": "Soft drinks, coffees, teas, beers, and ales"
+    },
+    {
+      "Id": 2,
+      "Name": "Condiments",
+      "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
+    },
+    {
+      "Id": 3,
+      "Name": "Confections",
+      "Description": "Desserts, candies, and sweet breads"
+    },
+    {
+      "Id": 4,
+      "Name": "Dairy Products",
+      "Description": "Cheeses"
+    },
+    {
+      "Id": 5,
+      "Name": "Grains/Cereals",
+      "Description": "Breads, crackers, pasta, and cereal"
+    },
+    {
+      "Id": 6,
+      "Name": "Meat/Poultry",
+      "Description": "Prepared meats"
+    },
+    {
+      "Id": 7,
+      "Name": "Produce",
+      "Description": "Dried fruit and bean curd"
+    },
+    {
+      "Id": 8,
+      "Name": "Seafood",
+      "Description": "Seaweed and fish"
+    }
+  ]
+}
+/*------------------ END 21.10.2019 17:31:38------------------*/
+

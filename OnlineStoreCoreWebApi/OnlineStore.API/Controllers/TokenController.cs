@@ -17,8 +17,8 @@ using Newtonsoft.Json;
 
 namespace OnlineStore.API.Controllers
 {
-    //[Produces("application/json")]
-    //[Route("api/Token")]
+    [ApiController]
+    [Route("api/[controller]")]
     public class TokenController : Controller
     {
         private readonly IConfiguration _configuration;
@@ -74,12 +74,6 @@ namespace OnlineStore.API.Controllers
         private User GetUserIdFromCredentials(LoginViewModel loginViewModel)
         {
             var user = _userServive.Get(_ => _.Email == loginViewModel.Email && _.Password == loginViewModel.Password);
-            //var userId = -1;
-            //if (loginViewModel.Username == "demo" && loginViewModel.Password == "demo")
-            //{
-            //    userId = 5;
-            //}
-
             return user;
         }
     }

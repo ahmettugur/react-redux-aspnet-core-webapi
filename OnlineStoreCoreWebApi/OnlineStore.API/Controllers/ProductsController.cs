@@ -14,8 +14,6 @@ using System.Threading;
 
 namespace OnlineStore.API.Controllers
 {
-    //[Produces("application/json")]
-    //[Route("api/Products")]
     public class ProductsController : Controller
     {
         private IProductService _productService;
@@ -227,7 +225,7 @@ namespace OnlineStore.API.Controllers
                 {
                     worksheet.Cells[1, i].Style.Font.Bold = true;
                     worksheet.Cells[1, i].Style.Fill.PatternType = ExcelFillStyle.Solid;
-                    worksheet.Cells[1, i].Style.Fill.BackgroundColor.SetColor(ColorTranslator.FromHtml("#448AFF"));
+                    worksheet.Cells[1, i].Style.Fill.BackgroundColor.SetColor(Color.LightBlue);
                     worksheet.Cells[1, i].Style.Font.Color.SetColor(Color.White);
                 }
 
@@ -241,7 +239,7 @@ namespace OnlineStore.API.Controllers
                     if (productList[k].StockQuantity <= 10)
                     {
                         worksheet.Cells[k + 2, 5].Style.Fill.PatternType = ExcelFillStyle.Solid;
-                        worksheet.Cells[k + 2, 5].Style.Fill.BackgroundColor.SetColor(ColorTranslator.FromHtml("#D50000"));
+                        worksheet.Cells[k + 2, 5].Style.Fill.BackgroundColor.SetColor(Color.Red);
                         worksheet.Cells[k + 2, 5].Style.Font.Color.SetColor(Color.White);
                     }
 

@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\ATCommon.Utilities\\ATCommon.Utilities.csproj": {}
+  },
+  "projects": {
+    "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\ATCommon.Utilities\\ATCommon.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\ATCommon.Utilities\\ATCommon.Utilities.csproj",
+        "projectName": "ATCommon.Utilities",
+        "projectPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\ATCommon.Utilities\\ATCommon.Utilities.csproj",
+        "packagesPath": "C:\\Users\\atugur\\.nuget\\packages\\",
+        "outputPath": "D:\\GithubProjectsTest\\react-redux-aspnet-core-webapi\\OnlineStore\\ATCommon.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\atugur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

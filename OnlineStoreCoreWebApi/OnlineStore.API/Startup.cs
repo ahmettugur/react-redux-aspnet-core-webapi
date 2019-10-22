@@ -1,25 +1,27 @@
-ï»¿ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using NSwag;
+using NSwag.Generation.Processors.Security;
+using OnlineStore.API.Middlewares;
 using OnlineStore.Business.Contracts;
 using OnlineStore.Business.Services;
-using OnlineStore.Data.EntityFramework.Concrete;
-using OnlineStore.Data.EntityFramework;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using Newtonsoft.Json.Serialization;
+using OnlineStore.Data.Contracts;
 using OnlineStore.Data.Dapper;
-using OnlineStore.API.Middlewares;
-using Microsoft.AspNetCore.Mvc;
-using OnlineStore.API.Controllers;
+using OnlineStore.Data.EntityFramework;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace OnlineStore.API
@@ -36,7 +38,41 @@ namespace OnlineStore.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
             services.AddDependencyInjection();
+
+            services.AddSwaggerDocument(config =>
+            {
+                config.PostProcess = document =>
+                {
+                    document.Info.Version = "v1";
+                    document.Info.Title = "Online Store API";
+                    document.Info.Description = "Onlaine Store App.Net Core 3.0 Web Api";
+                    document.Info.TermsOfService = "None";
+                    document.Info.Contact = new NSwag.OpenApiContact
+                    {
+                        Name = "Ahmet TÜGÜR",
+                        Email = string.Empty,
+                        Url = ""
+                    };
+                    document.Info.License = new NSwag.OpenApiLicense
+                    {
+                        Name = "",
+                        Url = "https://example.com/license"
+                    };
+                };
+                config.OperationProcessors.Add(new OperationSecurityScopeProcessor("JWT Token"));
+                config.AddSecurity("JWT Token", Enumerable.Empty<string>(),
+                    new OpenApiSecurityScheme()
+                    {
+                        Type = OpenApiSecuritySchemeType.ApiKey,
+                        Name = nameof(Authorization),
+                        In = OpenApiSecurityApiKeyLocation.Header,
+                        Description = "Copy this into the value field: Bearer {token}"
+                    }
+                );
+            });
+
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(jwtBearerOptions =>
@@ -66,46 +102,17 @@ namespace OnlineStore.API
                 };
             });
 
-            services.AddSwaggerGen(c =>
+            services.AddCors(options =>
             {
-                c.SwaggerDoc("CoreSwagger", new Info
-                {
-                    Title = "Swagger on OnlineStore.API",
-                    Version = "1.0.0",
-                    Description = "Swagger on nlineStore.API (ASP.NET Core 2.1)",
-                    Contact = new Contact()
-                    {
-                        Name = "",
-                        Url = "",
-                        Email = "ahmet_tgr@hotmaail.com"
-                    },
-                    TermsOfService = "http://swagger.io/terms/"
-                });
-
-                c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
-                {
-                    { "Bearer", new string[] { } }
-                });
-            
-                c.AddSecurityDefinition("Bearer", new ApiKeyScheme()
-                {                    
-                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
-                    Name = "Authorization",
-                    In = "header",
-                    Type = "apiKey",                                        
-                });    
+                options.AddPolicy("AllowOrigin",
+                    builder => builder.WithOrigins("http://localhost:3000"));
             });
-
-            services.AddCors();
-            //services.AddMvc();
-            // services.AddMvc()
-            //     .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             services.AddSignalR();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -114,20 +121,26 @@ namespace OnlineStore.API
 
             app.UseStaticFiles();
 
-            app.UseSwagger()
-            .UseSwaggerUI(c =>
-                {
-                    c.SwaggerEndpoint("/swagger/CoreSwagger/swagger.json", "Swagger Test .Net Core");
-                });
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
-            //app.UseCors(b => b.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
-            app.UseCors(_=>_.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+            //app.UseSwagger()
+            //.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/CoreSwagger/swagger.json", "Swagger Test .Net Core");
+            //});
+
+            app.UseCors(builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+
             app.UseAuthentication();
-            app.UseMvcWithDefaultRoute();
 
-            app.UseSignalR(routes =>
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapHub<ProductHub>("/producthub");
+                endpoints.MapControllers();
             });
         }
     }

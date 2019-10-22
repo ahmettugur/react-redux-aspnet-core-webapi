@@ -1,0 +1,13 @@
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\bin\Debug\netcoreapp3.0\ATCommon.Caching.Redis.deps.json
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\bin\Debug\netcoreapp3.0\ATCommon.Caching.Redis.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\obj\Debug\netcoreapp3.0\ATCommon.Caching.Redis.AssemblyInfoInputs.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\obj\Debug\netcoreapp3.0\ATCommon.Caching.Redis.AssemblyInfo.cs
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\obj\Debug\netcoreapp3.0\ATCommon.Caching.Redis.csprojAssemblyReference.cache
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\bin\Debug\netcoreapp3.0\ATCommon.Caching.Redis.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\bin\Debug\netcoreapp3.0\ATCommon.Caching.Contracts.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\obj\Debug\netcoreapp3.0\ATCommon.Caching.Redis.csproj.CopyComplete
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\obj\Debug\netcoreapp3.0\ATCommon.Caching.Redis.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\obj\Debug\netcoreapp3.0\ATCommon.Caching.Redis.pdb
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\bin\Debug\netcoreapp3.0\ATCommon.Utilities.dll
+D:\GithubProjectsTest\react-redux-aspnet-core-webapi\OnlineStore\ATCommon.Caching.Redis\bin\Debug\netcoreapp3.0\ATCommon.Utilities.pdb

@@ -3,11 +3,11 @@ using System.Text;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using OnlineStore.Utilities;
 using OnlineStore.Entity.Concrete;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
 using OnlineStore.MQ.RabbitMQ;
+using ATCommon.Utilities;
 
 namespace OnlineStore.MQService
 {
